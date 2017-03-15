@@ -1,7 +1,6 @@
 {
     "name": "telegramapp/telegram",
-    "description": "Telegram Application for Laravel which allows to send messages
-     to created groups and individual users.",
+    "description": "Telegram Application for Laravel which allows to send messages to created groups and individual users.",
     "type": "library",
     "authors": [
         {
