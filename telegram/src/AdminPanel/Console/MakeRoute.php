@@ -1,16 +1,16 @@
 <?php
 
-namespace Acacha\AdminLTETemplateLaravel\Console;
+namespace Telegramapp\Telegram\AdminPanel\Console;
 
-use Acacha\AdminLTETemplateLaravel\Compiler\StubFileCompiler;
-use Acacha\AdminLTETemplateLaravel\Console\Routes\Controller;
-use Acacha\AdminLTETemplateLaravel\Console\Routes\ControllerResourceRoute;
-use Acacha\AdminLTETemplateLaravel\Console\Routes\ControllerRoute;
-use Acacha\AdminLTETemplateLaravel\Console\Routes\GeneratesCode;
-use Acacha\AdminLTETemplateLaravel\Console\Routes\RegularRoute;
-use Acacha\AdminLTETemplateLaravel\Exceptions\RouteTypeNotValid;
-use Acacha\AdminLTETemplateLaravel\Exceptions\SpatieMenuDoesNotExists;
-use Acacha\AdminLTETemplateLaravel\Filesystem\Filesystem;
+use Telegramapp\Telegram\AdminPanel\Compiler\StubFileCompiler;
+use Telegramapp\Telegram\AdminPanel\Console\Routes\Controller;
+use Telegramapp\Telegram\AdminPanel\Console\Routes\ControllerResourceRoute;
+use Telegramapp\Telegram\AdminPanel\Console\Routes\ControllerRoute;
+use Telegramapp\Telegram\AdminPanel\Console\Routes\GeneratesCode;
+use Telegramapp\Telegram\AdminPanel\Console\Routes\RegularRoute;
+use Telegramapp\Telegram\AdminPanel\Exceptions\RouteTypeNotValid;
+use Telegramapp\Telegram\AdminPanel\Exceptions\SpatieMenuDoesNotExists;
+use Telegramapp\Telegram\AdminPanel\Filesystem\Filesystem;
 use Illuminate\Console\Command;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Artisan;

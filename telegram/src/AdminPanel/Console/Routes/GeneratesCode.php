@@ -1,6 +1,6 @@
 <?php
 
-namespace Acacha\AdminLTETemplateLaravel\Console\Routes;
+namespace Telegramapp\Telegram\AdminPanel\Console\Routes;
 
 /**
  * Interface GeneratesCode.

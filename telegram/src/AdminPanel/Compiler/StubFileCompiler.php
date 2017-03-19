@@ -1,6 +1,6 @@
 <?php
 
-namespace Acacha\AdminLTETemplateLaravel\Compiler;
+namespace Telegramapp\Telegram\AdminPanel\Compiler;
 
 /**
  * Class StubFileCompiler.

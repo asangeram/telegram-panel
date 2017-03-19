@@ -1,11 +1,11 @@
 <?php
 
-namespace Acacha\AdminLTETemplateLaravel\Console\Routes;
+namespace Telegramapp\Telegram\AdminPanel\Console\Routes;
 
 /**
  * Class Controller.
  *
- * @package Acacha\AdminLTETemplateLaravel\Console\Routes
+ * @package Telegramapp\Telegram\AdminPanel\Console\Routes
  */
 trait Controller
 {

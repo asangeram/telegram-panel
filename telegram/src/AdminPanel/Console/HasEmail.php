@@ -1,6 +1,6 @@
 <?php
 
-namespace Acacha\AdminLTETemplateLaravel\Console;
+namespace Telegramapp\Telegram\AdminPanel\Console;
 
 /**
  * Class HasEmail.

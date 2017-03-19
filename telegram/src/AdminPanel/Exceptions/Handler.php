@@ -1,6 +1,6 @@
 <?php
 
-namespace Acacha\AdminLTETemplateLaravel\app\Exceptions;
+namespace Telegramapp\Telegram\AdminPanel\app\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;

@@ -2,8 +2,8 @@
 
 namespace Telegramapp\Telegram\AdminPanel\Providers;
 
-use Telegramapp\Telegram\AdminPanel\Facades\AdminLTE;
-use Telegramapp\Telegram\AdminPanel\User\Providers\GuestUserServiceProvider;
+use Telegramapp\Telegram\AdminPanel\AdminLTE;
+use Telegramapp\Telegram\AdminPanel\Providers\GuestUserServiceProvider;
 use Creativeorange\Gravatar\Facades\Gravatar;
 use Creativeorange\Gravatar\GravatarServiceProvider;
 use Illuminate\Console\DetectsApplicationNamespace;
@@ -79,17 +79,21 @@ class AdminLTETemplateServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+
+        // $this->publishes([
+        //     __DIR__.'/AdminPanel/User/Http/Middleware' => base_path('app/Http/Middleware')]);
+
         $this->defineRoutes();
         $this->publishHomeController();
         $this->changeRegisterController();
         $this->changeLoginController();
         $this->changeForgotPasswordController();
         $this->changeResetPasswordController();
-        $this->publishPublicAssets();
+        // $this->publishPublicAssets();
         $this->publishViews();
         $this->publishResourceAssets();
-        $this->publishTests();
-        $this->publishLanguages();
+        // $this->publishTests();
+        // $this->publishLanguages();
         $this->publishGravatar();
         $this->publishConfig();
         $this->publishWebRoutes();
@@ -106,14 +110,14 @@ class AdminLTETemplateServiceProvider extends ServiceProvider
             $router = app('router');
 
             $router->group(['namespace' => $this->getAppNamespace().'Http\Controllers'], function () {
-                require __DIR__.'/../Http/routes.php';
+                include 'C:\Users\Alicja\Desktop\telegram-package\packages\telegramapp\telegram\src\Laravel\routes\web.php';
             });
         }
     }
 
-    /**
-     * Publish Home Controller.
-     */
+    // /**
+    //  * Publish Home Controller.
+    //  */
     private function publishHomeController()
     {
         $this->publishes(AdminLTE::homeController(), 'adminlte');
@@ -127,9 +131,9 @@ class AdminLTETemplateServiceProvider extends ServiceProvider
         $this->publishes(AdminLTE::registerController(), 'adminlte');
     }
 
-    /**
-     * Change default Laravel LoginController.
-     */
+    // /**
+    //  * Change default Laravel LoginController.
+    //  */
     private function changeLoginController()
     {
         $this->publishes(AdminLTE::loginController(), 'adminlte');
@@ -143,25 +147,25 @@ class AdminLTETemplateServiceProvider extends ServiceProvider
         $this->publishes(AdminLTE::forgotPasswordController(), 'adminlte');
     }
 
-    /**
-     * Change default Laravel reset password Controller.
-     */
+    // // /**
+    // //  * Change default Laravel reset password Controller.
+    // //  */
     private function changeResetPasswordController()
     {
         $this->publishes(AdminLTE::resetPasswordController(), 'adminlte');
     }
 
-    /**
-     * Publish public resource assets to Laravel project.
-     */
-    private function publishPublicAssets()
-    {
-        $this->publishes(AdminLTE::publicAssets(), 'adminlte');
-    }
+    // /**
+    //  * Publish public resource assets to Laravel project.
+    //  */
+    // private function publishPublicAssets()
+    // {
+    //     $this->publishes(AdminLTE::publicAssets(), 'adminlte');
+    // }
 
-    /**
-     * Publish package views to Laravel project.
-     */
+    // /**
+    //  * Publish package views to Laravel project.
+    //  */
     private function publishViews()
     {
         $this->loadViewsFrom(ADMINLTETEMPLATE_PATH.'/resources/views/', 'adminlte');
@@ -169,31 +173,31 @@ class AdminLTETemplateServiceProvider extends ServiceProvider
         $this->publishes(AdminLTE::views(), 'adminlte');
     }
 
-    /**
-     * Publish package resource assets to Laravel project.
-     */
+    // // /**
+    // //  * Publish package resource assets to Laravel project.
+    // //  */
     private function publishResourceAssets()
     {
         $this->publishes(AdminLTE::resourceAssets(), 'adminlte');
     }
 
-    /**
-     * Publish package tests to Laravel project.
-     */
-    private function publishTests()
-    {
-        $this->publishes(AdminLTE::tests(), 'adminlte');
-    }
+    // // /**
+    // //  * Publish package tests to Laravel project.
+    // //  */
+    // private function publishTests()
+    // {
+    //     $this->publishes(AdminLTE::tests(), 'adminlte');
+    // }
 
-    /**
-     * Publish package language to Laravel project.
-     */
-    private function publishLanguages()
-    {
-        $this->loadTranslationsFrom(ADMINLTETEMPLATE_PATH.'/resources/lang/', 'adminlte_lang');
+    // // /**
+    // //  * Publish package language to Laravel project.
+    // //  */
+    // private function publishLanguages()
+    // {
+    //     $this->loadTranslationsFrom(ADMINLTETEMPLATE_PATH.'/resources/lang/', 'adminlte_lang');
 
-        $this->publishes(AdminLTE::languages(), 'adminlte_lang');
-    }
+    //     $this->publishes(AdminLTE::languages(), 'adminlte_lang');
+    //  }
 
     /**
      * Publish config Gravatar file using group.

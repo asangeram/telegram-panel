@@ -1,6 +1,6 @@
 <?php
 
-namespace Acacha\AdminLTETemplateLaravel\Exceptions;
+namespace Telegramapp\Telegram\AdminPanel\Exceptions;
 
 /**
  * Class SpatieMenuDoesNotExists.

@@ -1,14 +1,14 @@
 <?php
 
-namespace Acacha\AdminLTETemplateLaravel\Console\Routes;
+namespace Telegramapp\Telegram\AdminPanel\Console\Routes;
 
-use Acacha\AdminLTETemplateLaravel\Compiler\StubFileCompiler;
-use Acacha\AdminLTETemplateLaravel\Filesystem\Filesystem;
+use Telegramapp\Telegram\AdminPanel\Compiler\StubFileCompiler;
+use Telegramapp\Telegram\AdminPanel\Filesystem\Filesystem;
 
 /**
  * Class Route.
  *
- * @package Acacha\AdminLTETemplateLaravel\Console\Routes
+ * @package Telegramapp\Telegram\AdminPanel\Console\Routes
  */
 abstract class Route implements GeneratesCode
 {

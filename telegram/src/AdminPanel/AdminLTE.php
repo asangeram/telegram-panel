@@ -1,6 +1,6 @@
 <?php
 
-namespace Acacha\AdminLTETemplateLaravel;
+namespace Telegramapp\Telegram\AdminPanel;
 
 /**
  * Class AdminLTE.
@@ -12,10 +12,10 @@ class AdminLTE
      *
      * @return array
      */
-    public function homeController()
+    public static function homeController()
     {
         return [
-            ADMINLTETEMPLATE_PATH.'/src/stubs/HomeController.stub' => app_path('Http/Controllers/HomeController.php'),
+            __DIR__.'/stubs/HomeController.stub' => app_path('Http/Controllers/HomeController.php'),
         ];
     }
 
@@ -24,10 +24,10 @@ class AdminLTE
      *
      * @return array
      */
-    public function registerController()
+    public static function registerController()
     {
         return [
-            ADMINLTETEMPLATE_PATH.'/src/stubs/RegisterController.stub' =>
+            __DIR__.'/stubs/RegisterController.stub' =>
                 app_path('Http/Controllers/Auth/RegisterController.php'),
         ];
     }
@@ -37,10 +37,10 @@ class AdminLTE
      *
      * @return array
      */
-    public function loginController()
+    public static function loginController()
     {
         return [
-            ADMINLTETEMPLATE_PATH.'/src/stubs/LoginController.stub' =>
+            __DIR__.'/stubs/LoginController.stub' =>
                 app_path('Http/Controllers/Auth/LoginController.php'),
         ];
     }
@@ -50,10 +50,10 @@ class AdminLTE
      *
      * @return array
      */
-    public function forgotPasswordController()
+    public static function forgotPasswordController()
     {
         return [
-            ADMINLTETEMPLATE_PATH.'/src/stubs/ForgotPasswordController.stub' =>
+            __DIR__.'/stubs/ForgotPasswordController.stub' =>
                 app_path('Http/Controllers/Auth/ForgotPasswordController.php'),
         ];
     }
@@ -63,10 +63,10 @@ class AdminLTE
      *
      * @return array
      */
-    public function resetPasswordController()
+    public static function resetPasswordController()
     {
         return [
-            ADMINLTETEMPLATE_PATH.'/src/stubs/ResetPasswordController.stub' =>
+            __DIR__.'/stubs/ResetPasswordController.stub' =>
                 app_path('Http/Controllers/Auth/ResetPasswordController.php'),
         ];
     }
@@ -76,30 +76,30 @@ class AdminLTE
      *
      * @return array
      */
-    public function publicAssets()
-    {
-        return [
-            ADMINLTETEMPLATE_PATH.'/public/img'     => public_path('img'),
-            ADMINLTETEMPLATE_PATH.'/public/css'     => public_path('css'),
-            ADMINLTETEMPLATE_PATH.'/public/js'      => public_path('js'),
-            ADMINLTETEMPLATE_PATH.'/public/plugins' => public_path('plugins'),
-            ADMINLTETEMPLATE_PATH.'/public/fonts'   => public_path('fonts'),
-        ];
-    }
+    // public static function publicAssets()
+    // {
+    //     return [
+    //         __DIR__.'/public/img'     => public_path('img'),
+    //         __DIR__.'/public/css'     => public_path('css'),
+    //         __DIR__.'/public/js'      => public_path('js'),
+    //         __DIR__.'/public/plugins' => public_path('plugins'),
+    //         __DIR__.'/public/fonts'   => public_path('fonts'),
+    //     ];
+    // }
 
     /**
      * Only views to overwrite.
      *
      * @return array
      */
-    public function viewsToOverwrite()
+    public static function viewsToOverwrite()
     {
         return [
-            ADMINLTETEMPLATE_PATH.'/resources/views/errors'            =>
+            __DIR__.'/resources/views/errors'            =>
                 resource_path('views/errors'),
-            ADMINLTETEMPLATE_PATH.'/resources/views/welcome.blade.php' =>
+            __DIR__.'/resources/views/welcome.blade.php' =>
                 resource_path('views/welcome.blade.php'),
-            ADMINLTETEMPLATE_PATH.'/resources/views/layouts/partials/sidebar.blade.php' =>
+            __DIR__.'/resources/views/layouts/partials/sidebar.blade.php' =>
                 resource_path('views/vendor/adminlte/layouts/partials/sidebar.blade.php'),
         ];
     }
@@ -109,10 +109,10 @@ class AdminLTE
      *
      * @return array
      */
-    public function sidebarView()
+    public static function sidebarView()
     {
         return [
-            ADMINLTETEMPLATE_PATH.'/resources/views/layouts/partials/sidebar.blade.php' =>
+            __DIR__.'/resources/views/layouts/partials/sidebar.blade.php' =>
                 resource_path('views/vendor/adminlte/layouts/partials/sidebar.blade.php'),
         ];
     }
@@ -122,71 +122,69 @@ class AdminLTE
      *
      * @return array
      */
-    public function views()
+    public static function views()
     {
         return [
-            ADMINLTETEMPLATE_PATH.'/resources/views/auth'              =>
+            __DIR__.'/resources/views/adminlte/auth'              =>
                 resource_path('views/vendor/adminlte/auth'),
-            ADMINLTETEMPLATE_PATH.'/resources/views/auth/emails'       =>
+            __DIR__.'/resources/views/adminlte/auth/emails'       =>
                 resource_path('views/vendor/adminlte/auth/emails'),
-            ADMINLTETEMPLATE_PATH.'/resources/views/errors'            =>
+            __DIR__.'/resources/views/adminlte/errors'            =>
                 resource_path('views/vendor/adminlte/errors'),
-            ADMINLTETEMPLATE_PATH.'/resources/views/layouts'           =>
+            __DIR__.'/resources/views/adminlte/layouts'           =>
                 resource_path('views/vendor/adminlte/layouts'),
-            ADMINLTETEMPLATE_PATH.'/resources/views/home.blade.php'    =>
-                resource_path('views/vendor/adminlte/home.blade.php'),
-            ADMINLTETEMPLATE_PATH.'/resources/views/welcome.blade.php' =>
+            __DIR__.'/resources/views/welcome.blade.php' =>
                 resource_path('views/welcome.blade.php'),
         ];
     }
 
-    /**
-     * Tests copy path.
-     *
-     * @return array
-     */
-    public function tests()
+    // /**
+    //  * Tests copy path.
+    //  *
+    //  * @return array
+    //  */
+    // public static function tests()
+    // {
+    //     return [
+    //         __DIR__.'/tests'       => base_path('tests'),
+    //         __DIR__.'/phpunit.xml' => base_path('phpunit.xml'),
+    //     ];
+    // }
+
+    // *
+    //  * Resource assets copy path.
+    //  *
+    //  * @return array
+     
+    public static function resourceAssets()
     {
         return [
-            ADMINLTETEMPLATE_PATH.'/tests'       => base_path('tests'),
-            ADMINLTETEMPLATE_PATH.'/phpunit.xml' => base_path('phpunit.xml'),
+            __DIR__.'/resources/assets/less' => resource_path('assets/less'),
+            __DIR__.'/resources/assets/sass' => resource_path('assets/sass'),
+            __DIR__.'/resources/assets/js'   => resource_path('assets/js'),
+            __DIR__.'/gulpfile.js'           => base_path('gulpfile.js'),
+            __DIR__.'/package.json'          => base_path('package.json'),
         ];
     }
 
-    /**
-     * Resource assets copy path.
-     *
-     * @return array
-     */
-    public function resourceAssets()
-    {
-        return [
-            ADMINLTETEMPLATE_PATH.'/resources/assets/less' => resource_path('assets/less'),
-            ADMINLTETEMPLATE_PATH.'/resources/assets/sass' => resource_path('assets/sass'),
-            ADMINLTETEMPLATE_PATH.'/resources/assets/js'   => resource_path('assets/js'),
-            ADMINLTETEMPLATE_PATH.'/gulpfile.js'           => base_path('gulpfile.js'),
-            ADMINLTETEMPLATE_PATH.'/package.json'          => base_path('package.json'),
-        ];
-    }
-
-    /**
-     * Languages assets copy path.
-     *
-     * @return array
-     */
-    public function languages()
-    {
-        return [
-            ADMINLTETEMPLATE_PATH.'/resources/lang' => resource_path('lang/vendor/adminlte_lang'),
-        ];
-    }
+    // /**
+    //  * Languages assets copy path.
+    //  *
+    //  * @return array
+    //  */
+    // public static function languages()
+    // {
+    //     return [
+    //         __DIR__.'/resources/lang' => resource_path('lang/vendor/adminlte_lang'),
+    //     ];
+    // }
 
     /**
      * Gravatar path.
      *
      * @return array
      */
-    public function gravatar()
+    public static function gravatar()
     {
         return [
             base_path().'/vendor/creativeorange/gravatar/config/gravatar.php' => config_path('gravatar.php'),
@@ -198,10 +196,10 @@ class AdminLTE
      *
      * @return array
      */
-    public function config()
+    public static function config()
     {
         return [
-            ADMINLTETEMPLATE_PATH.'/config/adminlte.php' => config_path('adminlte.php'),
+            __DIR__.'/config/adminlte.php' => config_path('adminlte.php'),
         ];
     }
 
@@ -210,10 +208,10 @@ class AdminLTE
      *
      * @return array
      */
-    public function spatieMenu()
+    public static function spatieMenu()
     {
         return [
-            ADMINLTETEMPLATE_PATH.'/resources/views/layouts/partials/sidebar_with_spatie_menu.blade.php' =>
+            __DIR__.'/resources/views/layouts/partials/sidebar_with_spatie_menu.blade.php' =>
                 resource_path('views/vendor/adminlte/layouts/partials/sidebar.blade.php')
         ];
     }
@@ -223,10 +221,10 @@ class AdminLTE
      *
      * @return array
      */
-    public function menu()
+    public static function menu()
     {
         return [
-            ADMINLTETEMPLATE_PATH.'/config/menu.php' =>
+            __DIR__.'/config/menu.php' =>
                 config_path('menu.php')
         ];
     }
@@ -236,23 +234,23 @@ class AdminLTE
      *
      * @return array
      */
-    public function webroutes()
+    public static function webroutes()
     {
         return [
-            ADMINLTETEMPLATE_PATH.'/routes/web.php' =>
+            __DIR__.'/routes/web.php' =>
                 base_path('routes/web.php')
         ];
     }
-
+ 
     /**
      * Api routes path.
      *
      * @return array
      */
-    public function apiroutes()
+    public static function apiroutes()
     {
         return [
-            ADMINLTETEMPLATE_PATH.'/routes/api.php' =>
+            __DIR__.'/routes/api.php' =>
                 base_path('routes/api.php')
         ];
     }

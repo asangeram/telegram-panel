@@ -26,7 +26,7 @@
     "squizlabs/php_codesniffer": "^2.3"
   },
   "autoload": {
-    "psr-4": {"Acacha\\AdminLTETemplateLaravel\\": "src"}
+    "psr-4": {"Telegramapp\\Telegram\\": "telegramapp/telegram/src/AdminPanel"}
   },
   "autoload-dev": {
     "psr-4": {

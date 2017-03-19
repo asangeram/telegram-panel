@@ -1,14 +1,14 @@
 <?php
 
-namespace Acacha\AdminLTETemplateLaravel\Console;
+namespace Telegramapp\Telegram\AdminPanel\Console;
 
-use Acacha\AdminLTETemplateLaravel\Filesystem\Filesystem;
+use Telegramapp\Telegram\AdminPanel\Filesystem\Filesystem;
 use Illuminate\Console\Command;
 
 /**
  * Class MakeView.
  *
- * @package Acacha\AdminLTETemplateLaravel\Console
+ * @package Telegramapp\Telegram\AdminPanel\Console
  */
 class MakeView extends Command
 {
@@ -16,7 +16,7 @@ class MakeView extends Command
     /**
      * The filesystem instance.
      *
-     * @var Acacha\AdminLTETemplateLaravel\Filesystem\Filesystem
+     * @var Telegramapp\Telegram\AdminPanel\Filesystem\Filesystem
      */
     protected $filesystem;
 

@@ -1,15 +1,15 @@
 <?php
 
-namespace Acacha\AdminLTETemplateLaravel\Console\Menus;
+namespace Telegramapp\Telegram\AdminPanel\Console\Menus;
 
-use Acacha\AdminLTETemplateLaravel\Compiler\StubFileCompiler;
-use Acacha\AdminLTETemplateLaravel\Console\Routes\GeneratesCode;
-use Acacha\AdminLTETemplateLaravel\Filesystem\Filesystem;
+use Telegramapp\Telegram\AdminPanel\Compiler\StubFileCompiler;
+use Telegramapp\Telegram\AdminPanel\Console\Routes\GeneratesCode;
+use Telegramapp\Telegram\AdminPanel\Filesystem\Filesystem;
 
 /**
  * Class Menu.
  *
- * @package Acacha\AdminLTETemplateLaravel\Console\Menus
+ * @package Telegramapp\Telegram\AdminPanel\Console\Menus
  */
 abstract class Menu implements GeneratesCode
 {

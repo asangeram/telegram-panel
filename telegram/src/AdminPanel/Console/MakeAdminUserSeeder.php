@@ -1,9 +1,9 @@
 <?php
 
-namespace Acacha\AdminLTETemplateLaravel\Console;
+namespace Telegramapp\Telegram\AdminPanel\Console;
 
-use Acacha\AdminLTETemplateLaravel\Compiler\StubFileCompiler;
-use Acacha\AdminLTETemplateLaravel\Filesystem\Filesystem;
+use Telegramapp\Telegram\AdminPanel\Compiler\StubFileCompiler;
+use Telegramapp\Telegram\AdminPanel\Filesystem\Filesystem;
 use Illuminate\Console\Command;
 
 /**

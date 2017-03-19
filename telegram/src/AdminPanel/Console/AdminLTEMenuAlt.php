@@ -1,6 +1,6 @@
 <?php
 
-namespace Acacha\AdminLTETemplateLaravel\Console;
+namespace Telegramapp\Telegram\AdminPanel\Console;
 
 use Acacha\AdminLTETemplateLaravel\Exceptions\SpatieMenuAlreadyExists;
 use Acacha\AdminLTETemplateLaravel\Facades\AdminLTE;

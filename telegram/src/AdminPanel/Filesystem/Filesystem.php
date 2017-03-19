@@ -1,6 +1,6 @@
 <?php
 
-namespace Acacha\AdminLTETemplateLaravel\Filesystem;
+namespace Telegramapp\Telegram\AdminPanel\Filesystem;
 
 /**
  * Class Filesystem.

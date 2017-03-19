@@ -1,6 +1,6 @@
 <?php
 
-namespace Acacha\AdminLTETemplateLaravel\Facades;
+namespace Telegramapp\Telegram\AdminPanel\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
