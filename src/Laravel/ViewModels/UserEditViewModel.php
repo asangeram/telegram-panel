@@ -1,8 +1,8 @@
 <?php
 
-namespace Nordal\ViewModels;
+namespace App\ViewModels;
 
-use Nordal\Data\Models\User;
+use App\Data\Models\User;
 
 /**
  * Description of UserEditViewModel

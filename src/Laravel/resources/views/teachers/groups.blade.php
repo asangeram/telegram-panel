@@ -27,7 +27,7 @@ $users = $ViewModel->User;
 
 		
 			<div class="register-box">
-				<form action="/telegram/dashboard/groups" method="POST">
+				<form action="/dashboard/groups" method="POST">
 					{{ csrf_field()}}
 		
 				<div class="form-group has-feedback">
@@ -75,11 +75,11 @@ $users = $ViewModel->User;
 
 		                        <td>
 
-		                            <input type="button" class="btn btn-info" onclick="location.href='/telegram/dashboard/groups/{{$groups->id}}/edit'" value="{{trans('app.EditBtn')}}" />
+		                            <input type="button" class="btn btn-info" onclick="location.href='/dashboard/groups/{{$groups->id}}/edit'" value="{{trans('app.EditBtn')}}" />
 		                  
 		                            <input type="button" class="btn btn-danger" onclick="deleteGroup(this, {{$groups->id}});return false;" value="{{trans('app.DeleteBtn')}}" />
 		                            @if($groups->chat_id != NULL )
-		                            <input type="button" class="btn btn-success" onclick="location.href='/telegram/dashboard/words'" value="{{trans('app.SendTelegramMessage')}}" />
+		                            <input type="button" class="btn btn-success" onclick="location.href='/dashboard/words'" value="{{trans('app.SendTelegramMessage')}}" />
 		                            @endif
 
 		                            <script type="text/javascript">
@@ -111,7 +111,7 @@ $users = $ViewModel->User;
 				<div class="panel panel-primary">
 					<div class="panel-heading"><h2>Add Users To Group</h2></div>
 
-					<form action="/telegram/dashboard/groups/addtogroup" method="POST">
+					<form action="/dashboard/groups/addtogroup" method="POST">
 						{{ csrf_field()}}
 					
 					<div class="panel-body">

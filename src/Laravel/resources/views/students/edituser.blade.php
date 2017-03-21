@@ -37,11 +37,11 @@ $User = $ViewModel->User;
                   <!-- edit form column -->
                   <div class="col-md-9 personal-info">
                   @if (Sentinel::getUser()->isAdmin())                    
-                      <form method="POST" action="/telegram/dashboard/users/{{$User->id}}/"> 
+                      <form method="POST" action="/dashboard/users/{{$User->id}}/"> 
                         {{ method_field('PATCH') }}
                         {{ csrf_field()}}
                   @elseif (Sentinel::getUser()->isStudent())
-                        <form method="POST" action="/telegram/profile/{{$User->id}}/"> 
+                        <form method="POST" action="/profile/{{$User->id}}/"> 
                         {{ method_field('PATCH') }}
                         {{ csrf_field()}}
                         {{-- <input type='hidden' name='back' onclick="location.href={{$ViewModel->BackUrl}}" /> --}}
@@ -137,9 +137,9 @@ $User = $ViewModel->User;
                                 <input type="submit" class="btn btn-primary" value="{{trans('app.Save')}}">
                                  <span></span>
                                 @if (Sentinel::getUser()->isAdmin())
-                                <input type="reset" class="btn btn-default" value="{{trans('app.CancelBtn')}}" onclick="location.href='/telegram/dashboard/users'">
+                                <input type="reset" class="btn btn-default" value="{{trans('app.CancelBtn')}}" onclick="location.href='/dashboard/users'">
                                 @elseif(Sentinel::getUser()->isStudent())
-                                <input type="reset" class="btn btn-default" value="{{trans('app.CancelBtn')}}" onclick="location.href='/telegram/profile/{{$User->id}}/'">
+                                <input type="reset" class="btn btn-default" value="{{trans('app.CancelBtn')}}" onclick="location.href='/profile/{{$User->id}}/'">
                                 @endif
                               </div>
                             </div>

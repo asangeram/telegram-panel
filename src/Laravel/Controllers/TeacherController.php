@@ -1,18 +1,18 @@
 <?php
 
-namespace Telegramapp\Telegram\Laravel\Controllers;
+namespace App\Http\Controllers;
 
-use Telegramapp\Telegram\Laravel\Models\Pin;
-use Telegramapp\Telegram\Laravel\Models\Map;
-use Telegramapp\Telegram\Laravel\Models\Task;
-use Telegramapp\Telegram\Laravel\Models\User;
+use App\Data\Models\Pin;
+use App\Data\Models\Map;
+use App\Data\Models\Task;
+use App\Data\Models\User;
 use Telegramapp\Telegram\Laravel\ViewModels\DashboardViewModel;
 use Telegramapp\Telegram\Laravel\ViewModels\UserEditViewModel;
 use Illuminate\Validation\Rule;
 use Sentinel;
 use Validator;
 use Illuminate\Http\Request;
-use Telegramapp\Telegram\Laravel\Models\Groups;
+use App\Data\Models\Groups;
 use DB;
 
 

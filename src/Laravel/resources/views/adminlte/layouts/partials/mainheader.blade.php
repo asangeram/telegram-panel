@@ -21,7 +21,7 @@
 
                     @if (Sentinel::check())
                         <li role="presentation">
-                            <form action="/telegram/logout" method="POST" id="logout-form" class="header-btn">
+                            <form action="/logout" method="POST" id="logout-form" class="header-btn">
                                 {{ csrf_field() }}                           
                                 </li>
                                 <li><a href="#" onclick="document.getElementById('logout-form').submit()">{{trans('app.Logout')}}</a></li>

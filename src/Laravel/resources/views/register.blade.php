@@ -8,7 +8,7 @@
 
 <body class="hold-transition register-page">
     <div id="app">
-        <form action="/telegram/register" method="POST">
+        <form action="/register" method="POST">
             {{ csrf_field()}}
         
             <div class="register-box">
@@ -73,7 +73,7 @@
                                 <input type="submit" value="{{trans('app.Register')}}" class="btn btn-success pull-left" />
                             </div>
                             <div class="col-xs-9">
-                                <input type="button" value="{{trans('app.Login')}}" class="btn btn-primary pull-right" onclick="location.href='/telegram/login'"/>
+                                <input type="button" value="{{trans('app.Login')}}" class="btn btn-primary pull-right" onclick="location.href='/login'"/>
                             </div>     
                     </div>
                     </div>

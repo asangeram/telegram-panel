@@ -1,9 +1,9 @@
 <?php
 
-namespace Nordal;
+namespace App\Data\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Nordal\Data\Models\BaseModel;
+use App\Data\Models\BaseModel;
 
 class Notifications extends Model
 {

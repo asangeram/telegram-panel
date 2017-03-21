@@ -1,6 +1,6 @@
 <?php
 
-namespace Nordal\ViewModels;
+namespace App\ViewModels;
 
 
 class BaseViewModel

@@ -1,13 +1,13 @@
 <?php
 
-namespace Telegramapp\Telegram\Laravel\Controllers;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Telegram\Bot\Api;
 use Telegram\Bot\Laravel\Facades\Telegram;
 use Validator;
 use DB;
-use Telegramapp\Telegram\Laravel\Models\User;
+use App\Data\Models\User;
 
 class TelegramController extends Controller
 {

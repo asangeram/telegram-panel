@@ -1,9 +1,9 @@
 <?php
 
-namespace Telegramapp\Telegram\Laravel\Controllers;
+namespace App\Http\Controllers;
 
 use Telegramapp\Telegram\Laravel\ViewModels\MapViewModel;
-// use Telegramapp\Telegram\Laravel\Models\Map;
+// use App\Data\Models\Map;
 use Telegramapp\Telegram\Laravel\Definitions\Roles;
 use Sentinel;
 

@@ -1,16 +1,16 @@
 <?php
 
-namespace Telegramapp\Telegram\Laravel\Controllers;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Telegramapp\Telegram\Laravel\Models\User;
-use Telegramapp\Telegram\Laravel\Models\Groups;
+use App\Data\Models\User;
+use App\Data\Models\Groups;
 use Telegramapp\Telegram\Laravel\ViewModels\DashboardViewModel;
 use Telegramapp\Telegram\Laravel\ViewModels\UserEditViewModel;
 use Sentinel;
 use Validator;
 use Illuminate\Validation\Rule;
-use Telegramapp\Telegram\Laravel\Controllers\TeacherController;
+use App\Http\Controllers\TeacherController;
 use Telegram\Bot\Laravel\Facades\Telegram;
 
 class AdminController extends TeacherController

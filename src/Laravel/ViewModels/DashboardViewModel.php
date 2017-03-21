@@ -1,10 +1,10 @@
 <?php
 
-namespace Nordal\ViewModels;
+namespace App\ViewModels;
 
-use \Nordal\Data\Models\User;
-use Nordal\Data\Models\Map;
-use Nordal\Data\Models\Pin;
+use App\Data\Models\User;
+use App\Data\Models\Map;
+use App\Data\Models\Pin;
 
 
 class DashboardViewModel extends BaseViewModel 

@@ -16,7 +16,7 @@ $user = $ViewModel->User;
     <div class="row">
 	<div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-            <form method="POST" action="/telegram/dashboard/addtogroup">
+            <form method="POST" action="/dashboard/addtogroup">
             {{csrf_field() }}
 
 					<div class="panel-heading">Add Users To Group</div>

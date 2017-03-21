@@ -1,9 +1,9 @@
 <?php
 
-namespace Telegramapp\Telegram\Laravel\Controllers;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Telegramapp\Telegram\Laravel\Models\Role;
+use App\Data\Models\Role;
 use Sentinel;
 use Validator;
 

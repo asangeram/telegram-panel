@@ -6,7 +6,7 @@
  * Time: 19:08
  */
 
-namespace Nordal\Data\Models;
+namespace App\Data\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Sofa\Eloquence\Eloquence;

@@ -24,8 +24,8 @@ $User = $ViewModel->User;
     	{{csrf_field()}}
 
     	<div>
-        	<input type="button" class="btn btn-success btn-lg" onclick="window.open('https://telegram.me/NordalBot?start={{$User->token_key}}' , '_blank')" value="Register Your Telegram"/>
-        	<input type="submit" class="btn btn-success btn-lg" onclick="window.open('https://telegram.me/NordalBot?start={{$User->token_key}}' , '_blank')" value="Skip Telegram Registration"/>
+        	<input type="button" class="btn btn-success btn-lg" onclick="window.open('https:/.me/NordalBot?start={{$User->token_key}}' , '_blank')" value="Register Your Telegram"/>
+        	<input type="submit" class="btn btn-success btn-lg" onclick="window.open('https:/.me/NordalBot?start={{$User->token_key}}' , '_blank')" value="Skip Telegram Registration"/>
     	</div>
 	</div>
 </body>

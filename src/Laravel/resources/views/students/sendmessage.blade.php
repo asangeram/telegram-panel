@@ -21,7 +21,7 @@ $users = $ViewModel->User;
 				<div class="panel-body">
 					<div class="row">
                         <div class="col-md-12">
-                            <form action="/telegram/dashboard/users/{{$users->id}}/send" method="POST">
+                            <form action="/dashboard/users/{{$users->id}}/send" method="POST">
                                 {{ csrf_field() }}
             										
                                 <h2 class="form-signin-heading">Send Message as Telegram Bot</h2>

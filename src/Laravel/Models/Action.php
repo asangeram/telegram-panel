@@ -1,8 +1,8 @@
 <?php
 
-namespace Nordal\Data\Models;
-use Nordal\Data\Models\BaseModel;
-use Nordal\Data\Models\User;
+namespace App\Data\Models;
+use App\Data\Models\BaseModel;
+use App\Data\Models\User;
 
 /**
  * Class Pin
@@ -14,7 +14,7 @@ use Nordal\Data\Models\User;
  * @property $CreatedAt
  * @property $UpdatedAt
  * 
- * @package Nordal\Data\Models
+ * @package App\Data\Models
  */
 class Action extends BaseModel
 {

@@ -14,7 +14,7 @@
 
         <div class="login-box-body">
         <p class="login-box-msg"> Zaloguj Się aby rozpocząć przygodę  </p>
-        <form action="/telegram/login" method="POST">
+        <form action="/login" method="POST">
             {{ csrf_field()}}
 
               @if(session('error'))
@@ -38,11 +38,11 @@
     
 
                 <div class="col-xs-4">
-                    <input type="button" value="{{trans('app.Register')}}" class="btn btn-primary pull-right" onclick="location.href='/telegram/register'"/>
+                    <input type="button" value="{{trans('app.Register')}}" class="btn btn-primary pull-right" onclick="location.href='/register'"/>
                 </div>
 
                 <div class="col-xs-5">
-                    <input type="button" value="{{trans('auth.forgotpassword')}}" class="btn btn-primary pull-right" onclick="location.href='/telegram/password/reset'"/>
+                    <input type="button" value="{{trans('auth.forgotpassword')}}" class="btn btn-primary pull-right" onclick="location.href='/password/reset'"/>
                 </div>
             </div>
         </form>

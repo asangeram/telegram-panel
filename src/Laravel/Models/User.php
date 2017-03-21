@@ -1,12 +1,12 @@
 <?php
 
 
-namespace Nordal\Data\Models;
+namespace App\Data\Models;
 
 use Carbon\Carbon;
 use Cartalyst\Sentinel\Users\EloquentUser;
 use DB;
-use Nordal\Definitions\Roles;
+use App\Definitions\Roles;
 use Sofa\Eloquence\Eloquence;
 use Sofa\Eloquence\Mappable;
 use Sofa\Eloquence\Mutable;
@@ -14,7 +14,7 @@ use Sofa\Eloquence\Mutable;
 
 /**
  * Class User
- * @package Nordal
+ * @package App
  *
  * @property int $Id
  * @property string $Name

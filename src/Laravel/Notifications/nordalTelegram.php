@@ -1,6 +1,6 @@
 <?php
 
-namespace Nordal\Notifications;
+namespace App\Notifications;
 
 use Illuminate\Bus\Queueable;
 use NotificationChannels\Telegram\TelegramChannel;

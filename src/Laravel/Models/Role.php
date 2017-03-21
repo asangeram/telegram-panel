@@ -1,17 +1,17 @@
 <?php
 
-namespace Nordal\Data\Models;
+namespace App\Data\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Nordal\Data\Models\BaseModel;
-use Nordal\Data\Models\User;
+use App\Data\Models\BaseModel;
+use App\Data\Models\User;
 use Sofa\Eloquence\Eloquence;
 use Sofa\Eloquence\Mappable;
 use Sofa\Eloquence\Mutable;
 use Cartalyst\Sentinel\Roles\EloquentRole;
 /**
  * Class Role
- * @package Nordal\Data\Models
+ * @package App\Data\Models
  *
  * @property int $Id
  * @property string $Name

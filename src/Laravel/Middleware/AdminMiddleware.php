@@ -1,6 +1,6 @@
 <?php
 
-namespace Nordal\Http\Middleware;
+namespace App\Http\Middleware;
 
 use Closure;
 use Sentinel;

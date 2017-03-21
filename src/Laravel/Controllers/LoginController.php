@@ -1,10 +1,10 @@
 <?php
 
-namespace Telegramapp\Telegram\Laravel\Controllers;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Sentinel;
-use Telegramapp\Telegram\Laravel\Models\User;
+use App\Data\Models\User;
 
 class LoginController extends Controller
 {

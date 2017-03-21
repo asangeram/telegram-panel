@@ -1,13 +1,13 @@
 <?php
 
-namespace Telegramapp\Telegram\Laravel\Controllers;
+namespace App\Http\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 // use Mobile_Detect;
-use Telegramapp\Telegram\Laravel\Models\BaseModel;
+use App\Data\Models\BaseModel;
 use App\Definitions\ResponseCode;
 use App\Exceptions\IncorrectTaskContentException;
 use App\Results\JsonResult;
