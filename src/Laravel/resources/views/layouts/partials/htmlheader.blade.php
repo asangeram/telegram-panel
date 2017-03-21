@@ -5,7 +5,6 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link href="{{ asset('/css/all.css') }}" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="{{ elixir('css/style.css') }}">
     <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js" type="text/javascript" charset="utf-8" async defer></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js" type="text/javascript" charset="utf-8" async defer></script>
 

@@ -12,7 +12,7 @@ class RegistrationController extends Controller
     public function register()
     {
 			$uniqueToken = str_random(8);
-      return view('register', compact('uniqueToken'));
+      return view('vendor.register', compact('uniqueToken'));
     }
 		
 

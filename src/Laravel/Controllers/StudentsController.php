@@ -15,7 +15,7 @@ class StudentsController extends Controller
 {
     public function profile(User $user)
     {
-        return $this->renderView('students.profile', function($vm)use($user){
+        return $this->renderView('vendor.students.profile', function($vm)use($user){
 			
 			/** 
             * @var $vm UserEditViewModel 
@@ -31,7 +31,7 @@ class StudentsController extends Controller
             $query->where('slug', '=', 'teacher');
         })->get();
         
-        return $this->renderView('students.edituser', function($vm)use($user, $teachers){
+        return $this->renderView('vendor.students.edituser', function($vm)use($user, $teachers){
             
             /** 
              * @var $vm UserEditViewModel 

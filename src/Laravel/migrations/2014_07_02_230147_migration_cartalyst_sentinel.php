@@ -137,6 +137,7 @@ class MigrationCartalystSentinel extends Migration
 		        $table->text('permissions')->nullable();
 		        $table->timestamp('last_login')->nullable();      
 		        $table->string('last_name')->nullable();
+                $table->string('name')->nullable();
 		        $table->string('nickname');
 		        $table->timestamps();
 
@@ -165,9 +166,9 @@ class MigrationCartalystSentinel extends Migration
                 if (!Schema::hasColumn('users','token_expiration')) {
                     $table->datetime('token_expiration')->nullable();
                 }
-                if (!Schema::hasColumn('users','phone_number')) {
-                    $table->string('phone_number')->nullable();
-                }
+                // if (!Schema::hasColumn('users','phone_number')) {
+                //     $table->string('phone_number')->nullable();
+                // }
 
 	        });
         }

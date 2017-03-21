@@ -20,7 +20,7 @@ class AdminController extends TeacherController
 
         $user = User::all();
 
-        return $this->renderView('admins.users.users', function($vm)use($user){
+        return $this->renderView('vendor.admins.users.users', function($vm)use($user){
             
             /** 
              * @var $vm EditUserViewModel 
@@ -39,7 +39,7 @@ class AdminController extends TeacherController
         
         $data = User::all();
 
-        return $this->renderView('admins.users.users', function($vm)use($data){
+        return $this->renderView('vendor.admins.users.users', function($vm)use($data){
             
             /** 
              * @var $vm DashboardViewModel 
@@ -56,7 +56,7 @@ class AdminController extends TeacherController
         $teachers = User::whereHas('roles', function ($query) {
             $query->where('slug', '=', 'teacher');
         })->get();
-        return $this->renderView('students.edituser', function($vm)use($user, $teachers){
+        return $this->renderView('vendor.students.edituser', function($vm)use($user, $teachers){
             
             /** 
              * @var $vm UserEditViewModel 
@@ -100,7 +100,7 @@ class AdminController extends TeacherController
 
     public function getMessage(User $user, Groups $groups)
     {
-        return $this->renderView('students.sendmessage', function($vm)use($user, $groups){
+        return $this->renderView('vendor.students.sendmessage', function($vm)use($user, $groups){
             
             /** 
              * @var $vm UserEditViewModel 

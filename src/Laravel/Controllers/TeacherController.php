@@ -25,7 +25,7 @@ class TeacherController extends Controller
         //     $query->where('slug', '=', 'teacher');
         // })->get();
 
-   		return $this->renderView('admins.dashboard', function($vm) use($user){
+   		return $this->renderView('vendor.admins.dashboard', function($vm) use($user){
             
             /** 
              * @var $vm DashboardViewModel 
@@ -40,7 +40,7 @@ class TeacherController extends Controller
         $map = Map::all();
         $pin = Pin::all();
 
-    	return $this->renderView('teachers.maps', function($vm)use($map, $pin){
+    	return $this->renderView('vendor.teachers.maps', function($vm)use($map, $pin){
             
             /** 
              * @var $vm DashboardViewModel 
@@ -70,7 +70,7 @@ class TeacherController extends Controller
         $user = User::all();
         $groups = Groups::all();
 
-        return $this->renderView('teachers.addtogroup', function($vm)use($user, $groups){
+        return $this->renderView('vendor.teachers.addtogroup', function($vm)use($user, $groups){
             
             /** 
              * @var $vm UserEditViewModel 
@@ -101,7 +101,7 @@ class TeacherController extends Controller
         $user = User::all();
         $groups = Groups::all();
 
-    	return $this->renderView('teachers.groups', function($vm)use($user, $groups){
+    	return $this->renderView('vendor.teachers.groups', function($vm)use($user, $groups){
             
             /** 
              * @var $vm UserEditViewModel 
@@ -146,7 +146,7 @@ class TeacherController extends Controller
 
     public function editGroup(Groups $groups)
     {
-        return $this->renderView('teachers.editgroup', function($vm)use($groups){
+        return $this->renderView('vendor.teachers.editgroup', function($vm)use($groups){
             
             /** 
              * @var $vm UserEditViewModel 
@@ -182,7 +182,7 @@ class TeacherController extends Controller
 
     public function getTasks(Task $task) {
 
-    	return $this->renderView('teachers.tasks', function($vm)use($task){
+    	return $this->renderView('vendor.teachers.tasks', function($vm)use($task){
             
             /** 
              * @var $vm UserEditViewModel 
@@ -196,7 +196,7 @@ class TeacherController extends Controller
         $user = User::all();
         $groups = Groups::all();
 
-        return $this->renderView('teachers.words', function($vm)use($user, $groups){
+        return $this->renderView('vendor.teachers.words', function($vm)use($user, $groups){
         
             /** 
              * @var $vm UserEditViewModel  

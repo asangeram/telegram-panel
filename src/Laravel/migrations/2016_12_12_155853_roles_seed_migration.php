@@ -3,8 +3,8 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-use Nordal\Data\Models\Role;
-use Nordal\Data\Models\User;
+use App\Data\Models\Role;
+use App\Data\Models\User;
 
 
 class RolesSeedMigration extends Migration
@@ -30,7 +30,7 @@ class RolesSeedMigration extends Migration
         Schema::table('users', function($table)
         {
         
-        $table->string('last_name')->after('name')->nullable();
+        // $table->string('last_name')->after('name')->nullable();
         
         $table->integer('teacher_id')->after('character_number')->nullable();
 
