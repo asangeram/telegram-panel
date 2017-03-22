@@ -50,11 +50,11 @@
                                 <li><option value="Female">{{trans('app.female')}}</option></li>
                             </select>   
                         </div>
-                        <div class="form-group has-feedback">
+{{--                         <div class="form-group has-feedback">
                             <input type="tel" class="form-control" placeholder="{{trans('app.Telephone')}}" name="PhoneNumber" 
                                 title="Phone Number (Format: +99(99)999-999-999)"/>
                             <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-                        </div>
+                        </div> --}}
                         <div class="form-group has-feedback"> 
                             <input type="password" class="form-control" placeholder="{{trans('app.Password')}}" name="password"/>
                             <span class="glyphicon glyphicon-lock form-control-feedback"></span>
