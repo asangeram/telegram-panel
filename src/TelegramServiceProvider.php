@@ -106,7 +106,7 @@ class TelegramServiceProvider extends ServiceProvider
         $this->registerManager($this->app);
         $this->registerBindings($this->app);
         // $this->loadViewsFrom(__DIR__.'/Laravel/Resources/views', 'telegram');
-        include __DIR__.'/Laravel/routes/web.php';
+        // include __DIR__.'/Laravel/routes/web.php';
         $this->app->make('App\Http\Controllers\AdminController');
         $this->app->make('Telegramapp\Telegram\Laravel\Controllers\TeacherController');
         $this->app->make('Telegramapp\Telegram\Laravel\Controllers\StudentsController');
