@@ -47,8 +47,8 @@ class TelegramServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/AdminPanel/user/Http/Middleware' => base_path('app/Http/Middleware')]);
 
-        $this->publishes([
-            __DIR__.'/Laravel/Controllers' => base_path('app/Http/Controllers')]);
+        // $this->publishes([
+        //     __DIR__.'/Laravel/Controllers' => base_path('app/Http/Controllers')]);
 
         $this->publishes([
             __DIR__.'/Laravel/Definitions' => base_path('app/Definitions')]);
@@ -64,12 +64,12 @@ class TelegramServiceProvider extends ServiceProvider
 
     }
 
-    private function publishViews()
-    {
-        $this->loadViewsFrom(__DIR__.'/Laravel/resources/views/', 'adminlte');
+    // private function publishViews()
+    // {
+    //     $this->loadViewsFrom(__DIR__.'/Laravel/resources/views/', 'adminlte');
 
-        $this->publishes(AdminLTE::views(), 'adminlte');
-    }
+    //     $this->publishes(AdminLTE::views(), 'adminlte');
+    // }
 
 
     /**
@@ -106,14 +106,14 @@ class TelegramServiceProvider extends ServiceProvider
         $this->registerManager($this->app);
         $this->registerBindings($this->app);
         // $this->loadViewsFrom(__DIR__.'/Laravel/Resources/views', 'telegram');
-        // include __DIR__.'/Laravel/routes/web.php';
-    //     $this->app->make('App\Http\Controllers\AdminController');
-    //     $this->app->make('Telegramapp\Telegram\Laravel\Controllers\TeacherController');
-    //     $this->app->make('Telegramapp\Telegram\Laravel\Controllers\StudentsController');
-    //     $this->app->make('Telegramapp\Telegram\Laravel\Controllers\TelegramController');
-    //     $this->app->make('Telegramapp\Telegram\Laravel\Controllers\DashboardController');
-    //     $this->app->make('Telegramapp\Telegram\Laravel\Controllers\RegistrationController');
-    //     $this->app->make('Telegramapp\Telegram\Laravel\Controllers\LoginController');
+        include __DIR__.'/Laravel/routes/web.php';
+        $this->app->make('App\Http\Controllers\AdminController');
+        $this->app->make('Telegramapp\Telegram\Laravel\Controllers\TeacherController');
+        $this->app->make('Telegramapp\Telegram\Laravel\Controllers\StudentsController');
+        $this->app->make('Telegramapp\Telegram\Laravel\Controllers\TelegramController');
+        $this->app->make('Telegramapp\Telegram\Laravel\Controllers\DashboardController');
+        $this->app->make('Telegramapp\Telegram\Laravel\Controllers\RegistrationController');
+        $this->app->make('Telegramapp\Telegram\Laravel\Controllers\LoginController');
 
     }
 

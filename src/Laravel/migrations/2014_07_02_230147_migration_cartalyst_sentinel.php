@@ -129,52 +129,41 @@ class MigrationCartalystSentinel extends Migration
             $table->index('user_id');
         });
 
-        if (!Schema::hasTable('users')) {
-	        Schema::create('users', function(Blueprint $table) {
-		        $table->increments('id');
+                if (!Schema::hasTable('users')) {
+            Schema::create('users', function(Blueprint $table) {
+                $table->increments('id');
                 $table->string('nickname');
                 $table->string('name')->nullable();
                 $table->string('last_name')->nullable();
-		        $table->string('email');
-		        $table->string('password');
-		        $table->text('permissions')->nullable();
-		        $table->timestamp('last_login')->nullable();      
+                $table->string('email');
+                $table->string('password');
+                $table->string('gender')->nullable;
+                $table->text('permissions')->nullable();
+                $table->timestamp('last_login')->nullable();      
                 $table->integer('teacher_id')->nullable();
-		        $table->timestamps();
+                $table->string('token_key')->nullable()->unique();
+                $table->datetime('token_expiration')->nullable();
+                $table->string('chat_id')->nullable();
+                $table->string('user_id')->nullable();
+                $table->timestamps();
 
-		        $table->engine = 'InnoDB';
-		        $table->unique('email');
+                $table->engine = 'InnoDB';
+                $table->unique('email');
                         $table->unique('nickname');
-	        });
+            });
         } else {
-        	Schema::table('users', function(Blueprint $table){
+            Schema::table('users', function(Blueprint $table){
 
-        		if (!Schema::hasColumn('users','last_login')) {
-			        $table->timestamp('last_login')->nullable();
-		        }
-		        if (!Schema::hasColumn('users','permissions')) {
-			        $table->timestamp('permissions')->nullable();
+                if (!Schema::hasColumn('users','last_login')) {
+                    $table->timestamp('last_login')->nullable();
                 }
-                if (!Schema::hasColumn('users','chat_id')) {
-                    $table->string('chat_id')->nullable();
+                if (!Schema::hasColumn('users','permissions')) {
+                    $table->timestamp('permissions')->nullable();
+                
                 }
-                if (!Schema::hasColumn('users','user_id')) {
-                    $table->string('user_id')->nullable();
-                }
-                if (!Schema::hasColumn('users','token_key')) {
-                    $table->string('token_key')->nullable()->unique();
-                }
-                if (!Schema::hasColumn('users','token_expiration')) {
-                    $table->datetime('token_expiration')->nullable();
-                }
-                // if (!Schema::hasColumn('users','phone_number')) {
-                //     $table->string('phone_number')->nullable();
-                // }
-
-	        });
+            });
         }
     }
-
     /**
      * Reverse the migrations.
      *

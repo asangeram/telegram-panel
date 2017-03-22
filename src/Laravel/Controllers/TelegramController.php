@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Telegramapp\Telegram\Laravel\Controllers;
 
 use Illuminate\Http\Request;
 use Telegram\Bot\Api;

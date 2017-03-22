@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Telegramapp\Telegram\Laravel\Controllers;
 
 use App\Data\Models\Pin;
 use App\Data\Models\Map;

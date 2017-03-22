@@ -10,7 +10,7 @@ use App\ViewModels\UserEditViewModel;
 use Sentinel;
 use Validator;
 use Illuminate\Validation\Rule;
-use App\Http\Controllers\TeacherController;
+use Telegramapp\Telegram\Laravel\Controllers\TeacherController;
 use Telegram\Bot\Laravel\Facades\Telegram;
 
 class AdminController extends TeacherController

@@ -86,21 +86,21 @@ class AdminLTETemplateServiceProvider extends ServiceProvider
         // $this->publishes([
         //     __DIR__.'/AdminPanel/User/Http/Middleware' => base_path('app/Http/Middleware')]);
 
-        $this->defineRoutes();
-        $this->publishHomeController();
-        $this->changeRegisterController();
-        $this->changeLoginController();
+        // $this->defineRoutes();
+        // $this->publishHomeController();
+        // $this->changeRegisterController();
+        // $this->changeLoginController();
         $this->changeForgotPasswordController();
         $this->changeResetPasswordController();
         // $this->publishPublicAssets();
-        $this->publishViews();
+        // $this->publishViews();
         $this->publishResourceAssets();
         // $this->publishTests();
         // $this->publishLanguages();
         $this->publishGravatar();
         $this->publishConfig();
-        $this->publishWebRoutes();
-        $this->publishApiRoutes();
+        // $this->publishWebRoutes();
+        // $this->publishApiRoutes();
         $this->enableSpatieMenu();
     }
 

@@ -69,14 +69,14 @@ Route::group(['middleware' => 'admin'], function () {
 
     /* Login & Register Routes */
 Route::group(['middleware' => ['web']], function () {
-Route::get('/register', 'RegistrationController@register');
-Route::post('/register', 'RegistrationController@postRegister');
+Route::get('/register', 'Telegramapp/Telegram/Laravel/Controllers/RegistrationController@register');
+Route::post('/register', 'Telegramapp/Telegram/Laravel/Controllers/RegistrationController@postRegister');
 
-Route::get('/login', 'LoginController@login');
-Route::post('/login', 'LoginController@postLogin');
-Route::get('/telegramRegister', 'LoginController@postLogin');
+Route::get('/login', 'Telegramapp/Telegram/Laravel/Controllers/LoginController@login');
+Route::post('/login', 'Telegramapp/Telegram/Laravel/Controllers/LoginController@postLogin');
+Route::get('/telegramRegister', 'Telegramapp/Telegram/Laravel/Controllers/LoginController@postLogin');
 
-Route::post('/logout', 'LoginController@logout');
+Route::post('/logout', 'Telegramapp/Telegram/Laravel/Controllers/LoginController@logout');
 });
     /* Students Routes */
 

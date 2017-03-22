@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Telegramapp\Telegram\Laravel\Controllers;
 
 use Telegramapp\Telegram\Laravel\ViewModels\MapViewModel;
 // use App\Data\Models\Map;
