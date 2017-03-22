@@ -6,7 +6,9 @@ use Telegramapp\Telegram\AdminPanel\AdminLTE;
 use Telegramapp\Telegram\AdminPanel\Providers\GuestUserServiceProvider;
 use Creativeorange\Gravatar\Facades\Gravatar;
 use Creativeorange\Gravatar\GravatarServiceProvider;
-use Illuminate\Console\DetectsApplicationNamespace;
+// use Illuminate\Console\DetectsApplicationNamespace;
+use Illuminate\Console\AppNamespaceDetectorTrait;
+
 use Illuminate\Support\ServiceProvider;
 
 /**
@@ -14,7 +16,8 @@ use Illuminate\Support\ServiceProvider;
  */
 class AdminLTETemplateServiceProvider extends ServiceProvider
 {
-    use DetectsApplicationNamespace;
+    // use DetectsApplicationNamespace;
+    use AppNamespaceDetectorTrait;
 
     /**
      * Register the application services.

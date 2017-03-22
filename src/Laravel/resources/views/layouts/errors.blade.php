@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-@include('adminlte::layouts.partials.htmlheader')
+@include('vendor.layouts.partials.htmlheader')
 <body>
     <div id="app">
         <!-- Main content -->

@@ -1,4 +1,4 @@
-@extends('adminlte::layouts.app')
+@extends('vendor.layouts.app')
 
 <?php
 

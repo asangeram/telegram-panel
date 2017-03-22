@@ -73,10 +73,10 @@ Route::get('/register', 'RegistrationController@register');
 Route::post('/register', 'RegistrationController@postRegister');
 
 Route::get('/login', 'LoginController@login');
-Route::post('/login', 'oginController@postLogin');
+Route::post('/login', 'LoginController@postLogin');
 Route::get('/telegramRegister', 'LoginController@postLogin');
 
-Route::post('/logout', 'oginController@logout');
+Route::post('/logout', 'LoginController@logout');
 });
     /* Students Routes */
 

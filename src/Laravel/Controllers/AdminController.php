@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Telegramapp\Telegram\Laravel\Controllers;
 
 use Illuminate\Http\Request;
 use App\Data\Models\User;
 use App\Data\Models\Groups;
-use Telegramapp\Telegram\Laravel\ViewModels\DashboardViewModel;
-use Telegramapp\Telegram\Laravel\ViewModels\UserEditViewModel;
+use App\ViewModels\DashboardViewModel;
+use App\ViewModels\UserEditViewModel;
 use Sentinel;
 use Validator;
 use Illuminate\Validation\Rule;

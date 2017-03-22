@@ -18,7 +18,9 @@
     "illuminate/support": "~5.0",
     "cartalyst/sentinel": "2.0.*",
     "acacha/adminlte-laravel-installer": "~3.0",
-    "creativeorange/gravatar": "~1.0"
+    "creativeorange/gravatar": "~1.0",
+    "sofa/eloquence": "~5.3",
+    "twbs/bootstrap": "*"
   },
   "require-dev": {
     "phpunit/phpunit": "^4.8 || ^5.0",

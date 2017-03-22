@@ -1,5 +1,5 @@
 
-@extends('adminlte::layouts.app-map')
+@extends('vendor.layouts.app-map')
 
 @section('main-content')
 <div class="container-fluid spark-screen">

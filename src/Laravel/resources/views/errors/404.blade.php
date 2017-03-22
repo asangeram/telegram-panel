@@ -1,4 +1,4 @@
-@extends('adminlte::layouts.errors')
+@extends('vendor.layouts.errors')
 
 @section('htmlheader_title')
     {{ trans('adminlte_lang::message.pagenotfound') }}

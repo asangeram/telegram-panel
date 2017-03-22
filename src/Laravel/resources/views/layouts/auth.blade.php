@@ -2,7 +2,7 @@
 <html>
 
 
-@include('adminlte::layouts.partials.htmlheader')
+@include('vendor.layouts.partials.htmlheader')
 
 @yield('content')
 

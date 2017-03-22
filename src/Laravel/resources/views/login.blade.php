@@ -1,4 +1,4 @@
-@extends('adminlte::layouts.auth')
+@extends('vendor.layouts.auth')
 
 @section('htmlheader_title')
     Log in

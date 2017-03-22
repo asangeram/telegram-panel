@@ -6,7 +6,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <html lang="en">
 
 @section('htmlheader')
-    @include('adminlte::layouts.partials.htmlheader')
+    @include('vendor.layouts.partials.htmlheader')
 @show
 
 <!--
@@ -33,13 +33,13 @@ desired effect
 <div id="app">
     <div class="wrapper">
 
-    @include('adminlte::layouts.partials.mainheader-map')
+    @include('vendor.layouts.partials.mainheader-map')
 
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
 
-        @include('adminlte::layouts.partials.contentheader')
+        @include('vendor.layouts.partials.contentheader')
 
         <!-- Main content -->
         <section class="content">
@@ -48,14 +48,14 @@ desired effect
         </section><!-- /.content -->
     </div><!-- /.content-wrapper -->
 
-    @include('adminlte::layouts.partials.controlsidebar')
+    @include('vendor.layouts.partials.controlsidebar')
 
-    @include('adminlte::layouts.partials.footer')
+    @include('vendor.layouts.partials.footer')
 
 </div><!-- ./wrapper -->
 </div>
 @section('scripts')
-    @include('adminlte::layouts.partials.scripts')
+    @include('vendor.layouts.partials.scripts')
 @show
 
 </body>

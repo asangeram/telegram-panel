@@ -27,14 +27,12 @@ class RolesSeedMigration extends Migration
         $id = DB::table('roles')->insertGetId (
             array ('slug' => 'student', 'name' => 'Student')
         );
-        Schema::table('users', function($table)
-        {
+        // Schema::table('users', function($table)
+        // {
         
         // $table->string('last_name')->after('name')->nullable();
-        
-        $table->integer('teacher_id')->after('character_number')->nullable();
 
-        });
+        // });
 
         $studentId = Role::where('name', 'student')->firstOrFail()->id;
         $users = User::all();

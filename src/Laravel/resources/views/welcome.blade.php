@@ -1,2 +1,2 @@
-@extends('adminlte::layouts.landing')
+@extends('vendor.layouts.landing')
 

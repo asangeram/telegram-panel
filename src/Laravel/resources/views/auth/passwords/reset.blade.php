@@ -1,4 +1,4 @@
-@extends('adminlte::layouts.auth')
+@extends('vendor.layouts.auth')
 
 @section('htmlheader_title')
     Password reset
@@ -70,7 +70,7 @@
     </div><!-- /.login-box -->
     </div>
 
-    @include('adminlte::layouts.partials.scripts_auth')
+    @include('vendor.layouts.partials.scripts_auth')
 
     <script>
         $(function () {

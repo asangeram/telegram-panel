@@ -1,4 +1,4 @@
-@extends('adminlte::layouts.auth')
+@extends('vendor.layouts.auth')
 <?php
 
 use Nordal\ViewModels\UserEditViewModel;
