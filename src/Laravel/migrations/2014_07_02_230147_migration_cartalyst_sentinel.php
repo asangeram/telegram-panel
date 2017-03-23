@@ -129,7 +129,9 @@ class MigrationCartalystSentinel extends Migration
             $table->index('user_id');
         });
 
-                if (!Schema::hasTable('users')) {
+        if (!Schema::hasTable('users')) {
+            ;
+        } else {
             Schema::create('users', function(Blueprint $table) {
                 $table->increments('id');
                 $table->string('nickname');
@@ -151,7 +153,6 @@ class MigrationCartalystSentinel extends Migration
                 $table->unique('email');
                         $table->unique('nickname');
             });
-        } else {
             Schema::table('users', function(Blueprint $table){
 
                 if (!Schema::hasColumn('users','last_login')) {
