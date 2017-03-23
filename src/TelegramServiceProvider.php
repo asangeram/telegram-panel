@@ -2,6 +2,8 @@
 
 namespace Telegramapp\Telegram;
 
+
+
 use Telegram\Bot\Api;
 use Telegram\Bot\BotsManager;
 use Illuminate\Support\ServiceProvider;
@@ -9,6 +11,9 @@ use Illuminate\Contracts\Container\Container as Application;
 use Laravel\Lumen\Application as LumenApplication;
 use Illuminate\Foundation\Application as LaravelApplication;
 use Telegramapp\Telegram\AdminPanel\AdminLTE;
+use Illuminate\Foundation\Console\ClearCompiledCommand;
+use Artisan;
+
 
 
 /**
@@ -21,7 +26,7 @@ class TelegramServiceProvider extends ServiceProvider
      *
      * @var bool
      */
-    protected $defer = true;
+    // protected $defer = true;
 
     /**
      * Boot the service provider.
@@ -60,8 +65,8 @@ class TelegramServiceProvider extends ServiceProvider
             __DIR__.'/Laravel/ViewModels' => base_path('app/ViewModels'),
         ]);
 
-        include __DIR__.'/Laravel/routes/web.php';
-
+        include __DIR__.'\Laravel\routes\web.php';
+// 
     }
 
     // private function publishViews()
@@ -106,8 +111,8 @@ class TelegramServiceProvider extends ServiceProvider
         $this->registerManager($this->app);
         $this->registerBindings($this->app);
         // $this->loadViewsFrom(__DIR__.'/Laravel/Resources/views', 'telegram');
-        // include __DIR__.'/Laravel/routes/web.php';
-        $this->app->make('App\Http\Controllers\AdminController');
+        // include __DIR__.'\Laravel\routes\web.php';
+        $this->app->make('Telegramapp\Telegram\Laravel\Controllers\AdminController');
         $this->app->make('Telegramapp\Telegram\Laravel\Controllers\TeacherController');
         $this->app->make('Telegramapp\Telegram\Laravel\Controllers\StudentsController');
         $this->app->make('Telegramapp\Telegram\Laravel\Controllers\TelegramController');
@@ -115,6 +120,8 @@ class TelegramServiceProvider extends ServiceProvider
         $this->app->make('Telegramapp\Telegram\Laravel\Controllers\RegistrationController');
         $this->app->make('Telegramapp\Telegram\Laravel\Controllers\LoginController');
 
+        $this->clearCompiled();
+        
     }
 
     /**
@@ -164,6 +171,13 @@ class TelegramServiceProvider extends ServiceProvider
     }
 
 
+    public function clearCompiled()
+    {
+        $this->app->singleton('command.clear-compiled', function () {
+            Artisan::call('clear-compiled', [
+        '--force' => true,
+        ]);
+        });
+    }
+
 }
-
-
