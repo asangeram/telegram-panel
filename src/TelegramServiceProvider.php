@@ -47,7 +47,7 @@ class TelegramServiceProvider extends ServiceProvider
         __DIR__.'/Laravel/Resources/views' => base_path('resources/views/vendor/'),
         ]);
         $this->publishes([
-            __DIR__.'/Laravel/Migrations/' => base_path('database/migrations/') ]);
+            __DIR__.'/Laravel/Migrations/' => base_path('database/migrations/') ], '--force');
         
         $this->publishes([
             __DIR__.'/AdminPanel/user/Http/Middleware' => base_path('app/Http/Middleware')]);
