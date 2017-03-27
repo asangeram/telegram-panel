@@ -9,7 +9,7 @@
     <div id="app">
         <div class="login-box">
             <div class="login-logo">
-                <a href="{{ url('/') }}"><b>Panel Nordala</a>
+                <a href="{{ url('/') }}"><b>Panel Appa</a>
             </div><!-- /.login-logo -->
 
         <div class="login-box-body">

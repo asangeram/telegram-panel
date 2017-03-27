@@ -1,8 +1,8 @@
 <?php
 
-namespace Telegram\Bot\Answers;
+namespace Telegramapp\Telegram\Answers;
 
-use Telegram\Bot\Api;
+use Telegramapp\Telegram\Api;
 
 /**
  * Class AnswerBus

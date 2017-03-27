@@ -4,8 +4,8 @@ namespace Telegramapp\Telegram;
 
 
 
-use Telegram\Bot\Api;
-use Telegram\Bot\BotsManager;
+use Telegramapp\Telegram\Api;
+use Telegramapp\Telegramapp\TelegramsManager;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Container\Container as Application;
 use Laravel\Lumen\Application as LumenApplication;

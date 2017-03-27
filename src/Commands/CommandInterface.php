@@ -1,9 +1,9 @@
 <?php
 
-namespace Telegram\Bot\Commands;
+namespace Telegramapp\Telegram\Commands;
 
-use Telegram\Bot\Api;
-use Telegram\Bot\Objects\Update;
+use Telegramapp\Telegram\Api;
+use Telegramapp\Telegram\Objects\Update;
 
 /**
  * Interface CommandInterface.

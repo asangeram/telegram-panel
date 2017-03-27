@@ -74,6 +74,7 @@ Route::post('/register', '\Telegramapp\Telegram\Laravel\Controllers\Registration
 
 Route::get('/login', '\Telegramapp\Telegram\Laravel\Controllers\LoginController@login');
 Route::post('/login', '\Telegramapp\Telegram\Laravel\Controllers\LoginController@postLogin');
+Route::post('/skiplogin', '\Telegramapp\Telegram\Laravel\Controllers\LoginController@skipLogin');
 Route::get('/telegramRegister', '\Telegramapp\Telegram\Laravel\Controllers\LoginController@postLogin');
 
 Route::post('/logout', '\Telegramapp\Telegram\Laravel\Controllers\LoginController@logout');

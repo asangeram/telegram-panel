@@ -1,8 +1,8 @@
 <?php
 
-namespace Telegram\Bot\Exceptions;
+namespace Telegramapp\Telegram\Exceptions;
 
-use Telegram\Bot\TelegramResponse;
+use Telegramapp\Telegram\TelegramResponse;
 
 /**
  * Class TelegramResponseException.

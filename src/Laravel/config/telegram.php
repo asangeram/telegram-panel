@@ -72,7 +72,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | If you'd like to use a custom HTTP Client Handler.
-    | Should be an instance of \Telegram\Bot\HttpClients\HttpClientInterface
+    | Should be an instance of \Telegramapp\Telegram\HttpClients\HttpClientInterface
     |
     | Default: GuzzlePHP
     |
@@ -103,14 +103,21 @@ return [
     |
     | Global commands will apply to all the bots in system and are always active.
     |
-    | The command class should extend the \Telegram\Bot\Commands\Command class.
+    | The command class should extend the \Telegramapp\Telegram\Commands\Command class.
     |
     | Default: The SDK registers, a help command which when a user sends /help
     | will respond with a list of available commands and description.
     |
     */
+  
     'commands' => [
-        Telegram\Bot\Commands\HelpCommand::class,
+        Telegramapp\Telegram\Commands\HelpCommand::class,
+        Telegramapp\Telegram\Commands\StartCommand::class,
+        Telegramapp\Telegram\Commands\GroupCommand::class,
+        Telegramapp\Telegram\Commands\UsersCommand::class,
+        Telegramapp\Telegram\Commands\TestCommand::class,
+        Telegramapp\Telegram\Commands\InviteLinkCommand::class,
+
     ],
 
     /*

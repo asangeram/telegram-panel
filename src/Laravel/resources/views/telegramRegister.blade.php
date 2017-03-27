@@ -1,7 +1,7 @@
 @extends('vendor.layouts.auth')
 <?php
 
-use Nordal\ViewModels\UserEditViewModel;
+use App\ViewModels\UserEditViewModel;
 
 /**
  * @var $ViewModel UserEditViewModel
@@ -20,12 +20,18 @@ $User = $ViewModel->User;
     	<div>
     		<h1>Register Your Telegram account!</h1>
     	</div>
-    	<form action="#" method='PATHC'>
+    	<form action="#" method='PATCH'>
     	{{csrf_field()}}
 
     	<div>
-        	<input type="button" class="btn btn-success btn-lg" onclick="window.open('https:/.me/NordalBot?start={{$User->token_key}}' , '_blank')" value="Register Your Telegram"/>
-        	<input type="submit" class="btn btn-success btn-lg" onclick="window.open('https:/.me/NordalBot?start={{$User->token_key}}' , '_blank')" value="Skip Telegram Registration"/>
+        	<input type="button" class="btn btn-success btn-lg" onclick="window.open('https:/telegram.me/AppBot?start={{$User->token_key}}' , '_blank')" value="Register Your Telegram"/>
+        </div>
+        <div>
+            <form action="/skipLogin" method="POST">
+            {{csrf_field()}}
+
+        	<input type="submit" class="btn btn-success btn-lg" value="Skip Telegram Registration"/>
+            </form>
     	</div>
 	</div>
 </body>

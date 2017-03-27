@@ -1,8 +1,8 @@
 <?php
 
-namespace Telegram\Bot;
+namespace Telegramapp\Telegram;
 
-use Telegram\Bot\Exceptions\TelegramSDKException;
+use Telegramapp\Telegram\Exceptions\TelegramSDKException;
 
 /**
  * Class TelegramRequest.

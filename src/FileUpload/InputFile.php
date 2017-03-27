@@ -1,9 +1,9 @@
 <?php
 
-namespace Telegram\Bot\FileUpload;
+namespace Telegramapp\Telegram\FileUpload;
 
 use GuzzleHttp\Psr7;
-use Telegram\Bot\Exceptions\TelegramSDKException;
+use Telegramapp\Telegram\Exceptions\TelegramSDKException;
 
 /**
  * Class InputFile.

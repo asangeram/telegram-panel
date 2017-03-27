@@ -37,7 +37,7 @@ class Controller extends BaseController
 			$viewmodel = last(explode('\\', get_class($viewmodel)));
 		}
 
-		$className = 'Nordal\\ViewModels\\' . $viewmodel . 'ViewModel';
+		$className = 'App\\ViewModels\\' . $viewmodel . 'ViewModel';
 		if (class_exists($className)) {
 			$vm = new $className;
 		}

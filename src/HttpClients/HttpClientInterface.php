@@ -1,6 +1,6 @@
 <?php
 
-namespace Telegram\Bot\HttpClients;
+namespace Telegramapp\Telegram\HttpClients;
 
 /**
  * Interface HttpClientInterface.

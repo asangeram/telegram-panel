@@ -1,6 +1,6 @@
 <?php
 
-namespace Telegram\Bot\Laravel\Facades;
+namespace Telegramapp\Telegram\Laravel\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

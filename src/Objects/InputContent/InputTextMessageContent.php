@@ -1,8 +1,8 @@
 <?php
 
-namespace Telegram\Bot\Objects\InputContent;
+namespace Telegramapp\Telegram\Objects\InputContent;
 
-use Telegram\Bot\Objects\InlineQuery\InlineBaseObject;
+use Telegramapp\Telegram\Objects\InlineQuery\InlineBaseObject;
 
 /**
  * Class InputTextMessageContent

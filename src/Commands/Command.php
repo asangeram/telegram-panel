@@ -1,10 +1,10 @@
 <?php
 
-namespace Telegram\Bot\Commands;
+namespace Telegramapp\Telegram\Commands;
 
-use Telegram\Bot\Answers\Answerable;
-use Telegram\Bot\Api;
-use Telegram\Bot\Objects\Update;
+use Telegramapp\Telegram\Answers\Answerable;
+use Telegramapp\Telegram\Api;
+use Telegramapp\Telegram\Objects\Update;
 use Nordal\Data\Models\User;
 use DB;
 

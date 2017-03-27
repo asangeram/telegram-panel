@@ -1,6 +1,6 @@
 <?php
 
-namespace Telegram\Bot\Commands;
+namespace Telegramapp\Telegram\Commands;
 
 /**
  * Class HelpCommand.

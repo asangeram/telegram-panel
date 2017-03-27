@@ -1,6 +1,6 @@
 <?php
 
-namespace Telegram\Bot\Objects;
+namespace Telegramapp\Telegram\Objects;
 
 /**
  * Class Voice.

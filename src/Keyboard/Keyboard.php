@@ -1,5 +1,5 @@
 <?php
-namespace Telegram\Bot\Keyboard;
+namespace Telegramapp\Telegram\Keyboard;
 
 /**
  * Class Keyboard

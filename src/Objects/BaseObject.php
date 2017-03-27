@@ -1,6 +1,7 @@
+
 <?php
 
-namespace Telegram\Bot\Objects;
+namespace Telegramapp\Telegram\Objects;
 
 use Illuminate\Support\Collection;
 

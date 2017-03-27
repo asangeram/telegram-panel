@@ -1,8 +1,8 @@
 <?php
 
-namespace Telegram\Bot\Helpers;
+namespace Telegramapp\Telegram\Helpers;
 
-use Telegram\Bot\Exceptions\TelegramEmojiMapFileNotFoundException;
+use Telegramapp\Telegram\Exceptions\TelegramEmojiMapFileNotFoundException;
 
 class Emojify
 {

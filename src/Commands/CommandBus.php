@@ -1,11 +1,11 @@
 <?php
 
-namespace Telegram\Bot\Commands;
+namespace Telegramapp\Telegram\Commands;
 
-use Telegram\Bot\Answers\AnswerBus;
-use Telegram\Bot\Api;
-use Telegram\Bot\Objects\Update;
-use Telegram\Bot\Exceptions\TelegramSDKException;
+use Telegramapp\Telegram\Answers\AnswerBus;
+use Telegramapp\Telegram\Api;
+use Telegramapp\Telegram\Objects\Update;
+use Telegramapp\Telegram\Exceptions\TelegramSDKException;
 
 /**
  * Class CommandBus.
@@ -128,7 +128,7 @@ class CommandBus extends AnswerBus
 
         throw new TelegramSDKException(
             sprintf(
-                'Command class "%s" should be an instance of "Telegram\Bot\Commands\CommandInterface"',
+                'Command class "%s" should be an instance of "Telegramapp\Telegram\Commands\CommandInterface"',
                 get_class($command)
             )
         );

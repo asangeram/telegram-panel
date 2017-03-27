@@ -1,5 +1,5 @@
 <?php
-namespace Telegram\Bot\Objects\InlineQuery;
+namespace Telegramapp\Telegram\Objects\InlineQuery;
 
 use BadMethodCallException;
 use Illuminate\Support\Collection;

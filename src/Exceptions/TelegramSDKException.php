@@ -1,6 +1,6 @@
 <?php
 
-namespace Telegram\Bot\Exceptions;
+namespace Telegramapp\Telegram\Exceptions;
 
 /**
  * Class TelegramSDKException.

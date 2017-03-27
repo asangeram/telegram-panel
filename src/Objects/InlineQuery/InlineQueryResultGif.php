@@ -1,6 +1,6 @@
 <?php
 
-namespace Telegram\Bot\Objects\InlineQuery;
+namespace Telegramapp\Telegram\Objects\InlineQuery;
 
 /**
  * Class InlineQueryResultGif

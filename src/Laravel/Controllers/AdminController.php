@@ -11,7 +11,7 @@ use Sentinel;
 use Validator;
 use Illuminate\Validation\Rule;
 use Telegramapp\Telegram\Laravel\Controllers\TeacherController;
-use Telegram\Bot\Laravel\Facades\Telegram;
+use Telegramapp\Telegram\Laravel\Facades\Telegram;
 
 class AdminController extends TeacherController
 {

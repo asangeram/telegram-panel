@@ -1,10 +1,10 @@
 <?php
 
-namespace Telegram\Bot\Events;
+namespace Telegramapp\Telegram\Events;
 
-use Telegram\Bot\Events\EmitsEvent;
-use Telegram\Bot\Api;
-use Telegram\Bot\Objects\Update;
+use Telegramapp\Telegram\Events\EmitsEvent;
+use Telegramapp\Telegram\Api;
+use Telegramapp\Telegram\Objects\Update;
 
 class UpdateWasReceived extends EmitsEvent
 {

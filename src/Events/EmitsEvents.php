@@ -1,6 +1,6 @@
 <?php
 
-namespace Telegram\Bot\Events;
+namespace Telegramapp\Telegram\Events;
 
 use League\Event\Emitter;
 use League\Event\EventInterface;

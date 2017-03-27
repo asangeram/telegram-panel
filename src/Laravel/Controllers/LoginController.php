@@ -73,4 +73,14 @@ class LoginController extends Controller
 
         return redirect('/login');
     }
+
+    public function skipLogin(User $user)
+    {
+       $user = Sentinel::getUser(); 
+
+       if($user->chat_id = null){
+        DB::table('users')->insert(['chat_id' => 0]);
+       }
+       postLogin();
+    }
 }

@@ -3,8 +3,8 @@
 namespace Telegramapp\Telegram\Laravel\Controllers;
 
 use Illuminate\Http\Request;
-use Telegram\Bot\Api;
-use Telegram\Bot\Laravel\Facades\Telegram;
+use Telegramapp\Telegram\Api;
+use Telegramapp\Telegram\Laravel\Facades\Telegram;
 use Validator;
 use DB;
 use App\Data\Models\User;

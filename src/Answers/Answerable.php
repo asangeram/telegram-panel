@@ -1,9 +1,9 @@
 <?php
 
-namespace Telegram\Bot\Answers;
+namespace Telegramapp\Telegram\Answers;
 
-use Telegram\Bot\Api;
-use Telegram\Bot\Objects\Update;
+use Telegramapp\Telegram\Api;
+use Telegramapp\Telegram\Objects\Update;
 
 /**
  * Class Answer

@@ -4,7 +4,7 @@
 
 <?php
 
-use Nordal\ViewModels\DashboardViewModel;
+use App\ViewModels\DashboardViewModel;
 
 /**
  * @var $ViewModel DashboardViewModel

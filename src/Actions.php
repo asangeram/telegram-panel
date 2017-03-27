@@ -1,6 +1,6 @@
 <?php
 
-namespace Telegram\Bot;
+namespace Telegramapp\Telegram;
 
 /**
  * Class Actions.

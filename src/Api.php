@@ -1,23 +1,23 @@
 <?php
 
-namespace Telegram\Bot;
+namespace Telegramapp\Telegram;
 
 use Illuminate\Contracts\Container\Container;
-use Telegram\Bot\Commands\CommandBus;
-use Telegram\Bot\Events\EmitsEvents;
-use Telegram\Bot\Events\UpdateWasReceived;
-use Telegram\Bot\Exceptions\TelegramSDKException;
-use Telegram\Bot\FileUpload\InputFile;
-use Telegram\Bot\HttpClients\HttpClientInterface;
-use Telegram\Bot\Objects\Chat;
-use Telegram\Bot\Objects\ChatMember;
-use Telegram\Bot\Objects\File;
-use Telegram\Bot\Objects\Message;
-use Telegram\Bot\Objects\UnknownObject;
-use Telegram\Bot\Objects\Update;
-use Telegram\Bot\Objects\User;
-use Telegram\Bot\Objects\UserProfilePhotos;
-use Telegram\Bot\Keyboard\Keyboard;
+use Telegramapp\Telegram\Commands\CommandBus;
+use Telegramapp\Telegram\Events\EmitsEvents;
+use Telegramapp\Telegram\Events\UpdateWasReceived;
+use Telegramapp\Telegram\Exceptions\TelegramSDKException;
+use Telegramapp\Telegram\FileUpload\InputFile;
+use Telegramapp\Telegram\HttpClients\HttpClientInterface;
+use Telegramapp\Telegram\Objects\Chat;
+use Telegramapp\Telegram\Objects\ChatMember;
+use Telegramapp\Telegram\Objects\File;
+use Telegramapp\Telegram\Objects\Message;
+use Telegramapp\Telegram\Objects\UnknownObject;
+use Telegramapp\Telegram\Objects\Update;
+use Telegramapp\Telegram\Objects\User;
+use Telegramapp\Telegram\Objects\UserProfilePhotos;
+use Telegramapp\Telegram\Keyboard\Keyboard;
 
 /**
  * Class Api.
@@ -1227,7 +1227,7 @@ class Api
      * ];
      * </code>
      *
-     * @deprecated Use Telegram\Bot\Keyboard\Keyboard::make(array $params = []) instead.
+     * @deprecated Use Telegramapp\Telegram\Keyboard\Keyboard::make(array $params = []) instead.
      *             To be removed in next major version.
      *
      * @link       https://core.telegram.org/bots/api#replykeyboardmarkup
@@ -1256,7 +1256,7 @@ class Api
      * ];
      * </code>
      *
-     * @deprecated Use Telegram\Bot\Keyboard\Keyboard::hide(array $params = []) instead.
+     * @deprecated Use Telegramapp\Telegram\Keyboard\Keyboard::hide(array $params = []) instead.
      *             To be removed in next major version.
      *
      * @link       https://core.telegram.org/bots/api#replykeyboardhide
@@ -1283,7 +1283,7 @@ class Api
      * ];
      * </code>
      *
-     * @deprecated Use Telegram\Bot\Keyboard\Keyboard::forceReply(array $params = []) instead.
+     * @deprecated Use Telegramapp\Telegram\Keyboard\Keyboard::forceReply(array $params = []) instead.
      *             To be removed in next major version.
      *
      * @link       https://core.telegram.org/bots/api#forcereply
@@ -1549,7 +1549,7 @@ class Api
         if ($action === 'get') {
             /* @noinspection PhpUndefinedFunctionInspection */
             $class_name = studly_case(substr($method, 3));
-            $class = 'Telegram\Bot\Objects\\'.$class_name;
+            $class = 'Telegramapp\Telegram\Objects\\'.$class_name;
             $response = $this->post($method, $arguments[0] ?: []);
 
             if (class_exists($class)) {

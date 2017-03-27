@@ -1,12 +1,12 @@
 <?php
 
-namespace Telegram\Bot\Commands;
+namespace Telegramapp\Telegram\Commands;
 
 use Nordal\Data\Models\User;
-use Telegram\Bot\Actions;
-use Telegram\Bot\Commands\Command;
-use Telegram\Bot\Objects;
-use Telegram\Bot\Api;
+use Telegramapp\Telegram\Actions;
+use Telegramapp\Telegram\Commands\Command;
+use Telegramapp\Telegram\Objects;
+use Telegramapp\Telegram\Api;
 
 class GroupCommand extends Command
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Telegram\Bot;
+namespace Telegramapp\Telegram;
 
 use GuzzleHttp\Promise\PromiseInterface;
 use Psr\Http\Message\ResponseInterface;
-use Telegram\Bot\Exceptions\TelegramResponseException;
-use Telegram\Bot\Exceptions\TelegramSDKException;
+use Telegramapp\Telegram\Exceptions\TelegramResponseException;
+use Telegramapp\Telegram\Exceptions\TelegramSDKException;
 
 /**
  * Class TelegramResponse.
