@@ -11,7 +11,7 @@ use App\Data\Models\BaseModel;
 use App\Definitions\ResponseCode;
 use App\Exceptions\IncorrectTaskContentException;
 use App\Results\JsonResult;
-use Telegramapp\Telegram\Laravel\ViewModels\BaseViewModel;
+use App\ViewModels\BaseViewModel;
 use Sentinel;
 
 class Controller extends BaseController

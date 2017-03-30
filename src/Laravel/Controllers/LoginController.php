@@ -5,6 +5,7 @@ namespace Telegramapp\Telegram\Laravel\Controllers;
 use Illuminate\Http\Request;
 use Sentinel;
 use App\Data\Models\User;
+use DB;
 
 class LoginController extends Controller
 {
