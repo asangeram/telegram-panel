@@ -29,7 +29,7 @@ class LoginController extends Controller
                         ->withInput($request->input());   
                 }                
                 if($user->isAdmin() && $user->chat_id === null){
-                    return view('/telegramRegister', function($vm)use($user){
+                    return view('vendor/telegramRegister', function($vm)use($user){
 			
 										/** 
 										* @var $vm UserEditViewModel 
@@ -44,14 +44,14 @@ class LoginController extends Controller
                                     }
 
                                 if($user->isTeacher() && $user->chat_id === null){
-                                    return view('/telegramRegister');
+                                    return view('vendor/telegramRegister');
 									} elseif( $user->isTeacher())
 									{
                                         return redirect('/teacher');
                                     }
 
                 if($user->isStudent() && $user->chat_id === null){
-										return $this->renderView('/telegramRegister', function($vm)use($user){
+										return $this->renderView('vendor/telegramRegister', function($vm)use($user){
 			
 										/** 
 										* @var $vm UserEditViewModel 

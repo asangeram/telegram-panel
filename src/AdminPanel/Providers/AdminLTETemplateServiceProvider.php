@@ -92,7 +92,7 @@ class AdminLTETemplateServiceProvider extends ServiceProvider
         // $this->changeLoginController();
         $this->changeForgotPasswordController();
         $this->changeResetPasswordController();
-        // $this->publishPublicAssets();
+        $this->publishPublicAssets();
         // $this->publishViews();
         $this->publishResourceAssets();
         // $this->publishTests();
@@ -158,13 +158,13 @@ class AdminLTETemplateServiceProvider extends ServiceProvider
         $this->publishes(AdminLTE::resetPasswordController(), 'adminlte');
     }
 
-    // /**
-    //  * Publish public resource assets to Laravel project.
-    //  */
-    // private function publishPublicAssets()
-    // {
-    //     $this->publishes(AdminLTE::publicAssets(), 'adminlte');
-    // }
+    /**
+     * Publish public resource assets to Laravel project.
+     */
+    private function publishPublicAssets()
+    {
+        $this->publishes(AdminLTE::publicAssets(), 'adminlte');
+    }
 
     // /**
     //  * Publish package views to Laravel project.

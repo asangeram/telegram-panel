@@ -10,7 +10,7 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-
+Route::group(['middleware' => ['web']], function () {
 Route::get('/', function () {
     return view('welcome');
 });
@@ -68,7 +68,7 @@ Route::group(['middleware' => 'admin'], function () {
 // Route::get('task/get/{taskId}', 'TaskController@getTask');
 
     /* Login & Register Routes */
-Route::group(['middleware' => ['web']], function () {
+
 Route::get('/register', '\Telegramapp\Telegram\Laravel\Controllers\RegistrationController@register');
 Route::post('/register', '\Telegramapp\Telegram\Laravel\Controllers\RegistrationController@postRegister');
 
@@ -78,7 +78,7 @@ Route::post('/skiplogin', '\Telegramapp\Telegram\Laravel\Controllers\LoginContro
 Route::get('/telegramRegister', '\Telegramapp\Telegram\Laravel\Controllers\LoginController@postLogin');
 
 Route::post('/logout', '\Telegramapp\Telegram\Laravel\Controllers\LoginController@logout');
-});
+
     /* Students Routes */
 
 Route::group(['middleware' => 'student'], function () {
@@ -98,7 +98,7 @@ Route::post('/348713440:AAGCWT2FoQ4Kg3HAHjkn9rdLKdNZiseT7CI/webhook', '\Telegram
 Route::post('/send', '\Telegramapp\Telegram\Laravel\Controllers\TelegramController@postMessage');
 Route::post('/send/group', '\Telegramapp\Telegram\Laravel\Controllers\TelegramController@postSendGroup');
 Route::get('/getmembers', '\Telegramapp\Telegram\Laravel\Controllers\TelegramController@chatMembersCount');
-
+});
 
 
     /* Game Routes */

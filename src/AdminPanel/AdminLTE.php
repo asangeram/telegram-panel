@@ -76,16 +76,16 @@ class AdminLTE
      *
      * @return array
      */
-    // public static function publicAssets()
-    // {
-    //     return [
-    //         __DIR__.'/public/img'     => public_path('img'),
-    //         __DIR__.'/public/css'     => public_path('css'),
-    //         __DIR__.'/public/js'      => public_path('js'),
-    //         __DIR__.'/public/plugins' => public_path('plugins'),
-    //         __DIR__.'/public/fonts'   => public_path('fonts'),
-    //     ];
-    // }
+    public static function publicAssets()
+    {
+        return [
+            __DIR__.'/public/img'     => public_path('img'),
+            __DIR__.'/public/css'     => public_path('css'),
+            __DIR__.'/public/js'      => public_path('js'),
+            __DIR__.'/public/plugins' => public_path('plugins'),
+            __DIR__.'/public/fonts'   => public_path('fonts'),
+        ];
+    }
 
     /**
      * Only views to overwrite.

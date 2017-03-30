@@ -21,7 +21,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class MigrationCartalystSentinel extends Migration
+class MigrationTelegramPanel extends Migration
 {
     /**
      * Run the migrations.
