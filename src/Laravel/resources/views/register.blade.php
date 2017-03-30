@@ -13,7 +13,7 @@
         
             <div class="register-box">
          
-                <h2 class="box-header">App Register</h2>
+                <h2 class="box-header">Nordal Register</h2>
 
                     {{-- <div class="register-box"> --}}
 

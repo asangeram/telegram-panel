@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Definitions;
+namespace Nordal\Definitions;
 
 
 class Roles

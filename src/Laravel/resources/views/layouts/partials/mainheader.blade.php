@@ -6,7 +6,7 @@
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini"><b>N</b>AP</span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><b>App</b>Admin Panel </span>
+        <span class="logo-lg"><b>Nordal</b>Admin Panel </span>
     </a>
 
     <!-- Header Navbar -->

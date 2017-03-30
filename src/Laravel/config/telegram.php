@@ -109,15 +109,8 @@ return [
     | will respond with a list of available commands and description.
     |
     */
-  
     'commands' => [
         Telegramapp\Telegram\Commands\HelpCommand::class,
-        Telegramapp\Telegram\Commands\StartCommand::class,
-        Telegramapp\Telegram\Commands\GroupCommand::class,
-        Telegramapp\Telegram\Commands\UsersCommand::class,
-        Telegramapp\Telegram\Commands\TestCommand::class,
-        Telegramapp\Telegram\Commands\InviteLinkCommand::class,
-
     ],
 
     /*

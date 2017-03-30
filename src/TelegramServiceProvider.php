@@ -5,7 +5,7 @@ namespace Telegramapp\Telegram;
 
 
 use Telegramapp\Telegram\Api;
-use Telegramapp\Telegramapp\BotsManager;
+use Telegramapp\Telegramapp\TelegramsManager;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Container\Container as Application;
 use Laravel\Lumen\Application as LumenApplication;
@@ -47,13 +47,13 @@ class TelegramServiceProvider extends ServiceProvider
         __DIR__.'/Laravel/Resources/views' => base_path('resources/views/vendor/'),
         ]);
         $this->publishes([
-            __DIR__.'/Laravel/Migrations/' => base_path('database/migrations/') ], '--force');
+            __DIR__.'/Laravel/Migrations/' => base_path('database/migrations/') ]);
         
         $this->publishes([
             __DIR__.'/AdminPanel/user/Http/Middleware' => base_path('app/Http/Middleware')]);
 
-        // $this->publishes([
-        //     __DIR__.'/Laravel/Controllers' => base_path('app/Http/Controllers')]);
+        $this->publishes([
+            __DIR__.'/Laravel/Middleware' => base_path('app/Http/Middleware')]);
 
         $this->publishes([
             __DIR__.'/Laravel/Definitions' => base_path('app/Definitions')]);

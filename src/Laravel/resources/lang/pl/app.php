@@ -12,7 +12,7 @@ return [
 	'SendTelegramMessage' => 'Wyślij Wiadomość',
 	'DeleteBtn' => 'Usuń',
 	'EditBtn' => 'Edytuj',
-	'App' => 'Witaj w Krainie App!',
+	'Nordal' => 'Witaj w Krainie Nordal!',
 
 	/* PROFIL */
 	'CancelBtn' => 'Anuluj',

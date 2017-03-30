@@ -74,8 +74,9 @@ Route::post('/register', '\Telegramapp\Telegram\Laravel\Controllers\Registration
 
 Route::get('/login', '\Telegramapp\Telegram\Laravel\Controllers\LoginController@login');
 Route::post('/login', '\Telegramapp\Telegram\Laravel\Controllers\LoginController@postLogin');
-Route::post('/skiplogin', '\Telegramapp\Telegram\Laravel\Controllers\LoginController@skipLogin');
 Route::get('/telegramRegister', '\Telegramapp\Telegram\Laravel\Controllers\LoginController@postLogin');
+Route::post('/skipTelegramLogin', '\Telegramapp\Telegram\Laravel\Controllers\Logincontroller@skipTelegramLogin');
+
 
 Route::post('/logout', '\Telegramapp\Telegram\Laravel\Controllers\LoginController@logout');
 
@@ -98,8 +99,8 @@ Route::post('/348713440:AAGCWT2FoQ4Kg3HAHjkn9rdLKdNZiseT7CI/webhook', '\Telegram
 Route::post('/send', '\Telegramapp\Telegram\Laravel\Controllers\TelegramController@postMessage');
 Route::post('/send/group', '\Telegramapp\Telegram\Laravel\Controllers\TelegramController@postSendGroup');
 Route::get('/getmembers', '\Telegramapp\Telegram\Laravel\Controllers\TelegramController@chatMembersCount');
-});
 
+});
 
     /* Game Routes */
 

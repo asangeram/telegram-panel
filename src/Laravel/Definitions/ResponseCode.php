@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Definitions;
+namespace Nordal\Definitions;
 
 /**
  * Class ResponseCode
- * @package App\Definitions
+ * @package Nordal\Definitions
  * @link https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
  */
 class ResponseCode

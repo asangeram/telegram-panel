@@ -2,7 +2,7 @@
 
 <?php
 
-use App\ViewModels\UserEditViewModel;
+use Nordal\ViewModels\UserEditViewModel;
 
 /**
  * @var $ViewModel UserEditViewModel

@@ -73,14 +73,20 @@ class LoginController extends Controller
 
         return redirect('/login');
     }
-
-    public function skipLogin(User $user)
+    
+    public function skipTelegramLogin(User $user)
     {
-       $user = Sentinel::getUser(); 
-
-       if($user->chat_id = null){
-        DB::table('users')->insert(['chat_id' => 0]);
-       }
-       postLogin();
+        $users = Sentinel::getUser();
+        
+        $chat_id = $users->chat_id;
+        
+        $email = $users->email;
+        
+        if($chat_id === null){
+            $table = DB::table('users')->update(['chat_id' => 0]);
+        }
+        
+        // dd($chat_id);
+        return back();
     }
 }

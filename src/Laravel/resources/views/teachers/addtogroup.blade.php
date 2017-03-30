@@ -2,7 +2,7 @@
 
 <?php
 
-use App\ViewModels\DashboardViewModel;
+use Nordal\ViewModels\DashboardViewModel;
 
 /**
  * @var $ViewModel UserEditViewModel

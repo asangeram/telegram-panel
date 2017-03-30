@@ -166,9 +166,9 @@ class AdminLTETemplateServiceProvider extends ServiceProvider
         $this->publishes(AdminLTE::publicAssets(), 'adminlte');
     }
 
-    // /**
-    //  * Publish package views to Laravel project.
-    //  */
+    /**
+     * Publish package views to Laravel project.
+     */
     private function publishViews()
     {
         $this->loadViewsFrom(ADMINLTETEMPLATE_PATH.'/resources/views/', 'adminlte');
