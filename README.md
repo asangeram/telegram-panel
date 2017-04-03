@@ -17,7 +17,9 @@ Aliases:
 'Reminder'   => Cartalyst\Sentinel\Laravel\Facades\Reminder::class,
 'Sentinel'   => Cartalyst\Sentinel\Laravel\Facades\Sentinel::class,
 
-Now do 'php artisan vendor:publish'
+Now do 'php artisan vendor:publish --force'
+
+We are using the "--force" attribute, because we are overriding app.js file to use AdminLTE
 
 Now put these classes into you 'App\Http\Kernel.php' under $routeMiddleware:
 
