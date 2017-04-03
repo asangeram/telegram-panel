@@ -86,6 +86,7 @@ $user = $ViewModel->User;
                     </tbody>
                   </table>
                   <input type="button" class="btn btn-primary" onclick="location.href='/profile/{{$user->id}}/edit'" value="edit"/>
+                  <input type="button" class="btn btn-success btn-lg" onclick="window.open('https:/telegram.me/AppBot?start={{$user->token_key}}' , '_blank')" value="Register Your Telegram"/>
                 </div>
               </div>
             </div>
