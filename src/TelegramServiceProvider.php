@@ -65,6 +65,8 @@ class TelegramServiceProvider extends ServiceProvider
             __DIR__.'/Laravel/ViewModels' => base_path('app/ViewModels'),
         ]);
 
+        $this->loadTranslationsFrom(__DIR__.'/AdminPanel/resources/lang/', 'telegram_trans');
+
         include __DIR__.'\Laravel\routes\web.php';
 // 
     }

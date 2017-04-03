@@ -17,12 +17,12 @@ $User = $ViewModel->User;
     <div class="row">      
 	    <div class="col-xs-12 ">                  
         <div class="panel panel-default"> 
-          <div class="panel-heading">{{trans('app.ProfilHeading')}}</div>                
+          <div class="panel-heading">{{trans('telegram_trans::app.ProfilHeading')}}</div>                
             <div class="panel-body">                                                                                                         
               <div class="box">
                 <h1>{{ $User->name }}</h1>
                 <div class="container">
-                <h3>{{trans('app.EditProfile')}}</h3>
+                <h3>{{trans('telegram_trans::app.EditProfile')}}</h3>
   	         <hr>
 	             <div class="row">
       <!-- left column -->
@@ -67,25 +67,25 @@ $User = $ViewModel->User;
                     
                     <form class="form-horizontal" role="form" style="overflow-x: auto">
                       <div class="form-group">
-                        <label class="col-lg-3 control-label">{{trans('app.Nickname')}}:</label>
+                        <label class="col-lg-3 control-label">{{trans('telegram_trans::app.Nickname')}}:</label>
                         <div class="col-lg-8">
                           <input class="form-control" name="Nickname" type="text" value="{{$User->nickname}}" required>
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="col-lg-3 control-label">{{trans('app.Name')}}:</label>
+                        <label class="col-lg-3 control-label">{{trans('telegram_trans::app.Name')}}:</label>
                         <div class="col-lg-8">
                           <input class="form-control" name="Name" type="text" value="{{$User->name}}"required>
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="col-lg-3 control-label">{{trans('app.LastName')}}:</label>
+                        <label class="col-lg-3 control-label">{{trans('telegram_trans::app.LastName')}}:</label>
                         <div class="col-lg-8">
                           <input class="form-control" name="LastName" type="text" value="{{$User->last_name}}" required>
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="col-lg-3 control-label">{{trans('app.Email')}}:</label>
+                        <label class="col-lg-3 control-label">{{trans('telegram_trans::app.Email')}}:</label>
                         <div class="col-lg-8">
                           <input class="form-control" name="Email" type="text" value="{{$User->email}}" required>
                           <div><h2>{{ $errors->first('email') }}</h2></div>
@@ -93,22 +93,22 @@ $User = $ViewModel->User;
                       </div>
                       
                       <div class="form-group">
-                        <label class="col-md-3 control-label">{{trans('app.Gender')}}:</label> 
+                        <label class="col-md-3 control-label">{{trans('telegram_trans::app.Gender')}}:</label> 
                         <div class="dropdown-menu-left col-md-8">                              
                             <select class="form-control" name="Gender">
                             @if ($User->gender === 'male')
-                                <li><option selected value="{{$User->gender}}">{{trans('app.male')}}<option></li>
+                                <li><option selected value="{{$User->gender}}">{{trans('telegram_trans::app.male')}}<option></li>
                             @elseif ($User->gender === 'female') 
-                              <li><option selected value="{{$User->gender}}">{{trans('app.female')}}<option></li>   
+                              <li><option selected value="{{$User->gender}}">{{trans('telegram_trans::app.female')}}<option></li>   
                             @endif
-                                <li><option value="Male">{{trans('app.male')}}</option></li>
-                                <li><option value="Female">{{trans('app.female')}}</option></li>
+                                <li><option value="Male">{{trans('telegram_trans::app.male')}}</option></li>
+                                <li><option value="Female">{{trans('telegram_trans::app.female')}}</option></li>
                             
                             </select>       
                         </div>
                       </div>
                         <div class="form-group">
-                            <label class="col-md-3 control-label">{{trans('app.TeacherId')}}:</label>
+                            <label class="col-md-3 control-label">{{trans('telegram_trans::app.TeacherId')}}:</label>
                             <div class="col-md-8">
                               <select name="TeacherId" class="form-control">
                                   <option></option>
@@ -120,13 +120,13 @@ $User = $ViewModel->User;
                             </div>
                           </div>
                             <div class="form-group">
-                              <label class="col-md-3 control-label">{{trans('app.Password')}}:</label>
+                              <label class="col-md-3 control-label">{{trans('telegram_trans::app.Password')}}:</label>
                               <div class="col-md-8">
                                 <input class="form-control hidden" name="Password" type="password" value="{{$User->password}}">
                               </div>
                             </div>
                             <div class="form-group">
-                              <label class="col-md-3 control-label">{{trans('app.ConfirmPassword')}}:</label>
+                              <label class="col-md-3 control-label">{{trans('telegram_trans::app.ConfirmPassword')}}:</label>
                               <div class="col-md-8">
                                 <input class="form-control hidden" name="Password" type="password" value="{{$User->password}}">
                               </div>
@@ -134,12 +134,12 @@ $User = $ViewModel->User;
                             <div class="form-group">
                               <label class="col-md-3 control-label"></label>
                               <div class="col-md-8">
-                                <input type="submit" class="btn btn-primary" value="{{trans('app.Save')}}">
+                                <input type="submit" class="btn btn-primary" value="{{trans('telegram_trans::app.Save')}}">
                                  <span></span>
                                 @if (Sentinel::getUser()->isAdmin())
-                                <input type="reset" class="btn btn-default" value="{{trans('app.CancelBtn')}}" onclick="location.href='/dashboard/users'">
+                                <input type="reset" class="btn btn-default" value="{{trans('telegram_trans::app.CancelBtn')}}" onclick="location.href='/dashboard/users'">
                                 @elseif(Sentinel::getUser()->isStudent())
-                                <input type="reset" class="btn btn-default" value="{{trans('app.CancelBtn')}}" onclick="location.href='/profile/{{$User->id}}/'">
+                                <input type="reset" class="btn btn-default" value="{{trans('telegram_trans::app.CancelBtn')}}" onclick="location.href='/profile/{{$User->id}}/'">
                                 @endif
                               </div>
                             </div>

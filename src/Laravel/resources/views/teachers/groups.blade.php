@@ -37,7 +37,7 @@ $users = $ViewModel->User;
                   
 				<div class="row">        
                     <div class="col-xs-3">
-                        <input type="submit" value="{{trans('app.Create')}}" class="btn btn-success pull-left" />
+                        <input type="submit" value="{{trans('telegram_trans::app.Create')}}" class="btn btn-success pull-left" />
                     </div>    
                 </div>
 				</form>
@@ -75,11 +75,11 @@ $users = $ViewModel->User;
 
 		                        <td>
 
-		                            <input type="button" class="btn btn-info" onclick="location.href='/dashboard/groups/{{$groups->id}}/edit'" value="{{trans('app.EditBtn')}}" />
+		                            <input type="button" class="btn btn-info" onclick="location.href='/dashboard/groups/{{$groups->id}}/edit'" value="{{trans('telegram_trans::app.EditBtn')}}" />
 		                  
-		                            <input type="button" class="btn btn-danger" onclick="deleteGroup(this, {{$groups->id}});return false;" value="{{trans('app.DeleteBtn')}}" />
+		                            <input type="button" class="btn btn-danger" onclick="deleteGroup(this, {{$groups->id}});return false;" value="{{trans('telegram_trans::app.DeleteBtn')}}" />
 		                            @if($groups->chat_id != NULL )
-		                            <input type="button" class="btn btn-success" onclick="location.href='/dashboard/words'" value="{{trans('app.SendTelegramMessage')}}" />
+		                            <input type="button" class="btn btn-success" onclick="location.href='/dashboard/words'" value="{{trans('telegram_trans::app.SendTelegramMessage')}}" />
 		                            @endif
 
 		                            <script type="text/javascript">

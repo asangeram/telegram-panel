@@ -26,7 +26,7 @@ $maps = $ViewModel->Map;
     <div class="tab-content">
         <!-- Home tab content -->
         <div class="tab-pane active" id="control-sidebar-pins-tab">
-            <h3 class="control-sidebar-heading">{{ trans('app.Pins') }}</h3>
+            <h3 class="control-sidebar-heading">{{ trans('telegram_trans::app.Pins') }}</h3>
             <ul class='control-sidebar-menu'>
                 @foreach($pins as $pin)
                     <ul>
@@ -41,7 +41,7 @@ $maps = $ViewModel->Map;
         <!-- Settings tab content -->
         <div class="tab-pane" id="control-sidebar-maps-tab">
             
-                <h3 class="control-sidebar-heading">{{trans('app.Maps')}}</h3>
+                <h3 class="control-sidebar-heading">{{trans('telegram_trans::app.Maps')}}</h3>
                 <ul class='control-sidebar-menu'>
                 @foreach($maps as $map)
                     <ul>

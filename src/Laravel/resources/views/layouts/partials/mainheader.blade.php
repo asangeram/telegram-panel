@@ -24,8 +24,8 @@
                             <form action="/logout" method="POST" id="logout-form" class="header-btn">
                                 {{ csrf_field() }}                           
                                 </li>
-                                <li><a href="#" onclick="document.getElementById('logout-form').submit()">{{trans('app.Logout')}}</a></li>
-                                <li><a href="{{ url('/register') }}">{{ trans('app.Registration') }}</a></li>
+                                <li><a href="#" onclick="document.getElementById('logout-form').submit()">{{trans('telegram_trans::app.Logout')}}</a></li>
+                                <li><a href="{{ url('/register') }}">{{ trans('telegram_trans::app.Registration') }}</a></li>
                             </form>
                     @endif   
                                     <!-- Control Sidebar Toggle Button -->

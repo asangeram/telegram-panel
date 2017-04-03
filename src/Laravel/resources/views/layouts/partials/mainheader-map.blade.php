@@ -23,11 +23,11 @@
                                 {{ csrf_field() }}                           
                                 </li>
 
-                                <li><a href="{{ url('/dashboard') }}">{{ trans('app.Home') }}</a></li>
+                                <li><a href="{{ url('/dashboard') }}">{{ trans('telegram_trans::app.Home') }}</a></li>
 
-                                <li><a href="#" onclick="document.getElementById('logout-form').submit()">{{trans('app.Logout')}}</a></li>
+                                <li><a href="#" onclick="document.getElementById('logout-form').submit()">{{trans('telegram_trans::app.Logout')}}</a></li>
 
-                                <li><a href="{{ url('/register') }}">{{ trans('app.Registration') }}</a></li>
+                                <li><a href="{{ url('/register') }}">{{ trans('telegram_trans::app.Registration') }}</a></li>
 
                             </form>
                     @endif   

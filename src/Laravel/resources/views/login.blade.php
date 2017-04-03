@@ -33,12 +33,12 @@
             </div>
             <div class="row">        
                 <div class="col-xs-3">
-                     <input type="submit" value="{{trans('app.LoginBtn')}}" class="btn btn-success pull-left" />
+                     <input type="submit" value="{{trans('telegram_trans::app.LoginBtn')}}" class="btn btn-success pull-left" />
                 </div><!-- /.col -->
     
 
                 <div class="col-xs-4">
-                    <input type="button" value="{{trans('app.Register')}}" class="btn btn-primary pull-right" onclick="location.href='/register'"/>
+                    <input type="button" value="{{trans('telegram_trans::app.Register')}}" class="btn btn-primary pull-right" onclick="location.href='/register'"/>
                 </div>
 
                 <div class="col-xs-5">

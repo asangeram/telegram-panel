@@ -46,11 +46,11 @@ $users = $ViewModel->Users;
                                 <td>{{$user->gender}}</td>
                                 <td>
   
-                                    <input type="button" class="btn btn-info" onclick="location.href='/dashboard/users/{{$user->id}}/edit'" value="{{trans('app.EditBtn')}}" />
+                                    <input type="button" class="btn btn-info" onclick="location.href='/dashboard/users/{{$user->id}}/edit'" value="{{trans('telegram_trans::app.EditBtn')}}" />
                           
-                                    <input type="button" class="btn btn-danger" onclick="deleteUser(this, {{$user->id}});return false;" value="{{trans('app.DeleteBtn')}}" />
+                                    <input type="button" class="btn btn-danger" onclick="deleteUser(this, {{$user->id}});return false;" value="{{trans('telegram_trans::app.DeleteBtn')}}" />
                                     @if($user->chat_id != NULL )
-                                    <input type="button" class="btn btn-success" onclick="location.href='/dashboard/users/{{$user->id}}/message'" value="{{trans('app.SendTelegramMessage')}}" />
+                                    <input type="button" class="btn btn-success" onclick="location.href='/dashboard/users/{{$user->id}}/message'" value="{{trans('telegram_trans::app.SendTelegramMessage')}}" />
                                     @endif
                                     <script type="text/javascript">
                                         function deleteUser(link, userId){
