@@ -4,8 +4,8 @@
     "type": "library",
     "authors": [
         {
-            "name": "RockSoft Development",
-            "email": "piotr@rocksoft.pl"
+            "name": "",
+            "email": ""
         }
     ],
     "minimum-stability": "dev",
